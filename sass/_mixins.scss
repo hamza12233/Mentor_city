@@ -1,0 +1,20 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin card-style {
+	background-color: #fff;
+	box-shadow: $card-shadow;
+	border-radius: 0.8rem;
+}
