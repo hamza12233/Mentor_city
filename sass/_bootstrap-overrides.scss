@@ -1,0 +1,23 @@
+.nav-tabs {
+	border: 0;
+
+	.nav-link {
+		border: 0;
+	}
+}
+
+.editprofile__menu {
+	.nav-link.active {
+		background: #fafafa;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+}
+
+.setting__tabs-menu {
+	.nav-link.active {
+		color: $brown;
+		font-weight: bold;
+		border-bottom: 2px solid $brown;
+	}
+}
