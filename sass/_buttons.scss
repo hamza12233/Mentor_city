@@ -124,6 +124,19 @@
 			background: darken($color-yellow, 5%);
 		}
 	}
+
+	&-input{
+		background: #EFF3FC;
+		border-radius: 7px;
+		color: $light-gray;
+
+		&:hover{
+			color: $light-gray;
+		}
+	}
+	&-cross-icon{
+		padding-left: 0.5rem;
+	}
 }
 
 .fas {
@@ -145,3 +158,4 @@
 		color: $light-gray;
 	}
 }
+

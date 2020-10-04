@@ -148,6 +148,14 @@ p {
     .pill-yellow:hover {
       color: #fff;
       background: #f0c234; }
+  .pill-input {
+    background: #EFF3FC;
+    border-radius: 7px;
+    color: #556182; }
+    .pill-input:hover {
+      color: #556182; }
+  .pill-cross-icon {
+    padding-left: 0.5rem; }
 
 .fas--fa-circle-1 {
   font-size: 1.5rem;
@@ -913,5 +921,40 @@ p {
 @media only screen and (max-width: 1199px) {
   .basic .col-md-12:nth-child(2) .regular-tab__group:first-child {
     margin-top: 3rem; } }
+
+.specialized .regular-tab__group {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+.specialized .regular-tab__input {
+  width: 27rem !important;
+  max-width: 27rem !important;
+  margin-bottom: 1.5rem; }
+  .specialized .regular-tab__input a {
+    display: flex; }
+
+.account-settings .regular-tab__input {
+  width: 37.77rem !important;
+  max-width: 37.77rem !important;
+  margin-bottom: 1.5rem; }
+.account-settings__deactive {
+  color: #262d3d;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem; }
+.account-settings__row {
+  display: flex;
+  justify-content: space-between; }
+  .account-settings__row p {
+    color: #556182;
+    font-size: 1.3rem; }
+  .account-settings__row a {
+    color: #204ecf;
+    font-size: 1.3rem; }
+    .account-settings__row a:hover {
+      text-decoration: underline !important; }
+
+.language .regular-tab__select {
+  max-width: 37rem !important;
+  width: 37rem !important; }
 
 /*# sourceMappingURL=main.css.map */

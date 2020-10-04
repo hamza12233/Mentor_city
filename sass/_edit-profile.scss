@@ -292,3 +292,64 @@
 		}
 	}
 }
+
+.specialized{
+	.regular-tab__group{
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.regular-tab__input{
+		width: 27rem !important;
+		max-width: 27rem !important;
+		margin-bottom: 1.5rem;
+
+		a{
+			display: flex;
+		}
+	}
+}
+
+.account-settings{
+	.regular-tab__input{
+		width: 37.77rem !important;
+		max-width: 37.77rem !important;
+		margin-bottom: 1.5rem;
+
+	}
+
+	&__deactive{
+		color: $sidebar-bg;
+		font-size: 1.4rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		
+		p{
+			color: $light-gray;
+			font-size: 1.3rem;
+		}
+
+		a{
+			color: $blue;
+			font-size: 1.3rem;
+
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
+	}
+
+}
+
+.language{
+
+	.regular-tab__select{
+		max-width: 37rem !important;
+		width: 37rem !important;
+	}
+}
