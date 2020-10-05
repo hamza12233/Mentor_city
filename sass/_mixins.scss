@@ -18,3 +18,9 @@
 	box-shadow: $card-shadow;
 	border-radius: 0.8rem;
 }
+
+@mixin card-style-blue {
+	background-color: $light-blue;
+	box-shadow: $card-shadow;
+	border-radius: 0.8rem;
+}
