@@ -48,12 +48,11 @@
 
     &__serachbox{
         position: relative;
-
+        
         input{
             max-width: 70.2rem;
             width: 70.2rem;
-            max-height: 4rem;
-            height: 4rem;
+            padding: 1.5rem;
             border-radius: 3rem;
             background-color:  #EFF3FC;
             border: 1px solid #FFFFFF;
@@ -68,7 +67,7 @@
         img{
             position: absolute;
             left: 15px;
-            top: 11px;
+            top: 17px;
         }
     }
 
@@ -97,7 +96,18 @@
         }
     }
 
-    &chat__avatar{
+    &__avatar{
+        border-radius: 50%;
+        position: relative;
+    }
+
+    &__online{
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: 0;
+        right: 0;
+        background-color: $green;
         border-radius: 50%;
     }
 
@@ -115,10 +125,6 @@
 
     &__lastmessage{
         font-size: 1.3rem;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 10rem;
     }
 
     .active-contact{
@@ -142,6 +148,13 @@
 
         &__header-left{
             display: flex;
+        }
+
+        &__avatar{
+            
+            img{
+                height: 5.2rem;
+            }
         }
 
         &__info{
