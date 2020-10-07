@@ -60,6 +60,30 @@ p {
   font-weight: bold;
   border-bottom: 2px solid #d9692a; }
 
+.pulse::before, .pulse::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 2rem solid #59195d;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulseEffect 1.5s linear infinite;
+  opacity: 0; }
+.pulse::after {
+  animation-delay: 0.3s; }
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(0.5);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.1);
+    opacity: 0; } }
 .button {
   padding: 1.2rem 2rem;
   display: inline-block;
@@ -1204,5 +1228,75 @@ p {
     height: 7rem; }
   .messagebox__send-icons img {
     padding-right: 1rem; }
+
+.main.main__audiocall {
+  min-height: calc(100vh - 7.1rem); }
+
+.audiocall {
+  flex-grow: 1; }
+  .audiocall__container {
+    height: 100%;
+    background-image: linear-gradient(131.86deg, #CA1F5D 5.73%, #321D7D 100.67%); }
+  .audiocall__middle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%; }
+  .audiocall__profile {
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+    width: 20rem;
+    height: 20rem; }
+    .audiocall__profile img {
+      width: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5; }
+  .audiocall__desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem; }
+    .audiocall__desc h4 {
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 2rem;
+      text-transform: capitalize; }
+  .audiocall__timezone {
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-top: 0.7rem; }
+  .audiocall__icons {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center; }
+  .audiocall__icon {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s; }
+    .audiocall__icon:hover {
+      cursor: pointer;
+      box-shadow: -1px 3px 22px -2px rgba(0, 0, 0, 0.48);
+      transform: translateY(-1px); }
+    .audiocall__icon:not(:last-child) {
+      margin-right: 2rem; }
+    .audiocall__icon:first-child {
+      width: 4.2rem;
+      height: 4.2rem; }
+    .audiocall__icon:last-child {
+      width: 4.2rem;
+      height: 4.2rem; }
 
 /*# sourceMappingURL=main.css.map */
