@@ -166,7 +166,8 @@ p {
   padding: 1.2rem 2rem;
   display: inline-block;
   border-radius: 0.5rem;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-transform: capitalize; }
   .button__status {
     width: 1.5rem;
     height: 1.5rem;
@@ -200,7 +201,7 @@ p {
     .button--outline:hover {
       background: #eff3fc;
       color: #204ecf; }
-  .button--blue {
+  .button--blue, .button--call {
     background: #556182;
     border-radius: 3px;
     border: 0;
@@ -211,10 +212,12 @@ p {
     font-size: 1.3rem;
     border: 2px solid transparent;
     transition: all 0.3s; }
-    .button--blue:hover {
+    .button--blue:hover, .button--call:hover {
       background: #fff;
       color: #556182;
       border: 2px solid #b8c1d9; }
+  .button--call {
+    background: rgba(82, 96, 137, 0.8); }
 
 .pill {
   font-size: 1.1rem;
@@ -251,7 +254,7 @@ p {
       color: #fff;
       background: #f0c234; }
   .pill-input {
-    background: #EFF3FC;
+    background: #eff3fc;
     border-radius: 7px;
     color: #556182; }
     .pill-input:hover {
@@ -1366,7 +1369,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .audiocall__icon:hover {
       cursor: pointer;
       box-shadow: -1px 3px 22px -2px rgba(0, 0, 0, 0.48);
@@ -1384,12 +1387,15 @@ p {
   flex-grow: 1;
   background: url(../img/call.bg.png) no-repeat;
   position: relative;
-  background-position: center;
+  background-position: top;
   background-size: cover; }
   .audiocalling__middle-container {
     display: flex;
     min-height: calc(100vh - 30rem);
     align-items: flex-end; }
+    .audiocalling__middle-container .audiocall__icon:nth-last-child(2) {
+      max-width: 4.2rem;
+      height: 4.2rem; }
   .audiocalling__header {
     display: flex;
     justify-content: space-between;
@@ -1401,9 +1407,9 @@ p {
       display: flex;
       justify-content: center;
       text-transform: capitalize; }
-  .audiocalling__icon-stroke {
+  .audiocalling__icon--stroke {
     background-color: #ffffff; }
-    .audiocalling__icon-stroke path {
+    .audiocalling__icon--stroke path {
       stroke: #556182; }
   .audiocalling__img-wrap {
     max-width: 10rem;
@@ -1414,16 +1420,78 @@ p {
       height: 100%; }
   .audiocalling__chat-icon {
     position: absolute;
-    right: 7rem; }
+    right: 7rem;
+    transition: all 0.3s;
+    border-radius: 50%; }
     @media only screen and (max-width: 850px) {
       .audiocalling__chat-icon {
         position: relative;
         right: 0; }
         .audiocalling__chat-icon svg {
           width: 4rem; } }
+    @media only screen and (max-width: 768px) {
+      .audiocalling__chat-icon {
+        position: absolute;
+        right: 5rem; } }
+    @media only screen and (max-width: 450px) {
+      .audiocalling__chat-icon {
+        position: relative;
+        right: 0; } }
     .audiocalling__chat-icon:hover {
       cursor: pointer;
       box-shadow: -1px 3px 22px -2px rgba(0, 0, 0, 0.48);
       transform: translateY(-1px); }
+
+.group-call {
+  flex-grow: 1;
+  position: relative; }
+  .group-call__topbar {
+    padding: 1rem;
+    height: 10rem;
+    background-color: #556182;
+    display: flex;
+    align-items: center; }
+  .group-call__profile {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%; }
+    .group-call__profile img {
+      width: 100%; }
+  .group-call__tile {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    position: relative; }
+    .group-call__tile img {
+      width: 100%; }
+    .group-call__tile button {
+      outline: none;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+      cursor: pointer;
+      width: 3rem;
+      height: 3rem; }
+  .group-call__members {
+    position: relative; }
+    .group-call__members .audiocall__icons {
+      position: absolute;
+      bottom: 7rem; }
+  .group-call__member {
+    position: relative; }
+    .group-call__member img {
+      width: 100%; }
+    .group-call__member a {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem; }
+  .group-call__chat-menu {
+    width: 30rem;
+    background-color: red;
+    height: 100vh;
+    transform: translateX(100%); }
 
 /*# sourceMappingURL=main.css.map */
