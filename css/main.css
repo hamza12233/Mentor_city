@@ -60,6 +60,12 @@ p {
   font-weight: bold;
   border-bottom: 2px solid #d9692a; }
 
+.group-call__chat-menu .nav-link.active {
+  color: #d9692a;
+  font-weight: bold;
+  border-bottom: 2px solid #d9692a;
+  background-color: transparent; }
+
 .modal-backdrop {
   z-index: 1;
   background-color: rgba(42, 52, 80, 0.85); }
@@ -1444,25 +1450,46 @@ p {
 
 .group-call {
   flex-grow: 1;
-  position: relative; }
+  position: relative;
+  display: flex;
+  overflow: hidden; }
+  .group-call__container {
+    width: 100%;
+    flex-shrink: 0;
+    transition: all 0.3s; }
+  .group-call__container.shrink {
+    flex-shrink: 0;
+    width: calc(100% - 30rem); }
   .group-call__topbar {
-    padding: 1rem;
-    height: 10rem;
+    padding: 1.5rem;
+    min-height: 10rem;
     background-color: #556182;
     display: flex;
     align-items: center; }
   .group-call__profile {
     width: 7rem;
     height: 7rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 2rem; }
     .group-call__profile img {
       width: 100%; }
+  .group-call__person-box {
+    display: flex;
+    align-items: center;
+    min-width: 30rem; }
+  .group-call__all-members {
+    display: flex;
+    overflow-x: scroll;
+    align-items: center; }
   .group-call__tile {
+    flex-shrink: 0;
     width: 7rem;
     height: 7rem;
     border: 1px solid #ffffff;
     border-radius: 4px;
     position: relative; }
+    .group-call__tile:not(:last-child) {
+      margin-right: 1.5rem; }
     .group-call__tile img {
       width: 100%; }
     .group-call__tile button {
@@ -1475,13 +1502,18 @@ p {
       cursor: pointer;
       width: 3rem;
       height: 3rem; }
+  .group-call__right-indicator {
+    margin-left: 1.5rem; }
+  .group-call__left-indicator {
+    margin-right: 1.5rem; }
   .group-call__members {
     position: relative; }
     .group-call__members .audiocall__icons {
       position: absolute;
       bottom: 7rem; }
   .group-call__member {
-    position: relative; }
+    position: relative;
+    height: 100%; }
     .group-call__member img {
       width: 100%; }
     .group-call__member a {
@@ -1489,9 +1521,20 @@ p {
       left: 1rem;
       bottom: 1rem; }
   .group-call__chat-menu {
-    width: 30rem;
-    background-color: red;
-    height: 100vh;
-    transform: translateX(100%); }
+    flex: 0 0 30rem; }
+    .group-call__chat-menu .nav-tabs {
+      padding: 1rem 2rem 0 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: #eff3fc; }
+    .group-call__chat-menu .nav-link {
+      color: #556182;
+      border-bottom: 2px solid transparent; }
+    .group-call__chat-menu svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.5rem; }
 
 /*# sourceMappingURL=main.css.map */
