@@ -19,7 +19,8 @@ body {
 
 ul,
 figure,
-p {
+p,
+.access-connection__list li {
   margin: 0; }
 
 a {
@@ -27,7 +28,7 @@ a {
   a:hover {
     text-decoration: none; }
 
-p {
+p, .access-connection__list li {
   font-size: 1.4rem; }
 
 .dark-gray {
@@ -144,7 +145,7 @@ p {
     padding: 1.5rem 2rem 1.5rem 1.5rem; }
   .modal-main__desc {
     margin-bottom: 2rem; }
-    .modal-main__desc p {
+    .modal-main__desc p, .modal-main__desc .access-connection__list li, .access-connection__list .modal-main__desc li {
       font-weight: 600;
       font-size: 1.6rem;
       color: #556182; }
@@ -579,18 +580,18 @@ p {
         padding: 2rem 0; } }
     .primary-container__tile > *:not(:last-child) {
       margin-bottom: 0.8rem; }
-    .primary-container__tile > p:first-child {
+    .primary-container__tile > p:first-child, .access-connection__list .primary-container__tile > li:first-child {
       color: #313e61;
       font-weight: 400; }
-    .primary-container__tile > p:last-of-type {
+    .primary-container__tile > p:last-of-type, .access-connection__list .primary-container__tile > li:last-of-type {
       color: #556182; }
-      .primary-container__tile > p:last-of-type span {
+      .primary-container__tile > p:last-of-type span, .access-connection__list .primary-container__tile > li:last-of-type span {
         font-weight: bold; }
   .primary-container__tile--1 > *:not(:last-child) {
     margin-bottom: 1.2rem; }
   .primary-container__tile--2 > *:not(:last-child) {
     margin-bottom: 0rem; }
-  .primary-container__tile--3 > p:first-child {
+  .primary-container__tile--3 > p:first-child, .access-connection__list .primary-container__tile--3 > li:first-child {
     margin-bottom: 2.6rem; }
   .primary-container__tile-badge {
     display: flex;
@@ -861,7 +862,7 @@ p {
   display: flex;
   align-items: center;
   padding-bottom: 1rem; }
-  .editprofile__title p {
+  .editprofile__title p, .editprofile__title .access-connection__list li, .access-connection__list .editprofile__title li {
     font-size: 1.6rem;
     color: #556182; }
   .editprofile__title img {
@@ -1050,7 +1051,7 @@ p {
 .account-settings__row {
   display: flex;
   justify-content: space-between; }
-  .account-settings__row p {
+  .account-settings__row p, .account-settings__row .access-connection__list li, .access-connection__list .account-settings__row li {
     color: #556182;
     font-size: 1.3rem; }
   .account-settings__row a {
@@ -1258,7 +1259,7 @@ p {
     border-radius: 0.8rem;
     padding: 1.3rem;
     margin-left: 2rem; }
-    .messagebox__desc p {
+    .messagebox__desc p, .messagebox__desc .access-connection__list li, .access-connection__list .messagebox__desc li {
       font-size: 1.3rem;
       color: #556182; }
   .messagebox__message-wrap-right {
@@ -1277,7 +1278,7 @@ p {
     border-radius: 0.8rem;
     padding: 1.3rem;
     margin-right: 2rem; }
-    .messagebox__desc-right p {
+    .messagebox__desc-right p, .messagebox__desc-right .access-connection__list li, .access-connection__list .messagebox__desc-right li {
       font-size: 1.3rem;
       color: #556182; }
   .messagebox__send-wrap {
@@ -1400,7 +1401,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 2rem; }
-    .audiocalling__header p {
+    .audiocalling__header p, .audiocalling__header .access-connection__list li, .access-connection__list .audiocalling__header li {
       font-size: 1.6rem;
       color: #ffffff;
       margin-top: 0.5rem;
@@ -1493,5 +1494,102 @@ p {
     background-color: red;
     height: 100vh;
     transform: translateX(100%); }
+
+.access-connection__container {
+  min-height: calc(100vh - 7.1rem); }
+.access-connection__title {
+  color: #556182;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative; }
+  .access-connection__title::after {
+    content: "";
+    position: absolute;
+    width: 86%;
+    height: 1px;
+    border: 1px solid #ebeced;
+    bottom: -8px;
+    left: 0; }
+.access-connection__head h6 {
+  font-size: 1.6rem;
+  margin: 3rem 0 1.5rem 0;
+  color: #262d3d; }
+.access-connection__head p, .access-connection__head .access-connection__list li, .access-connection__list .access-connection__head li {
+  font-size: 1.5rem;
+  color: #262d3d;
+  margin-bottom: 1.5rem; }
+.access-connection__list p, .access-connection__list li {
+  font-size: 1.5rem;
+  color: #262d3d;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem; }
+.access-connection__list ul {
+  padding-left: 3rem; }
+.access-connection__list li {
+  margin: 0.5rem 0; }
+.access-connection__playstore-icons {
+  margin: 4rem 0;
+  padding-left: 3rem;
+  display: flex; }
+  .access-connection__playstore-icons a:last-child {
+    padding-left: 1rem; }
+.access-connection__feedback {
+  font-size: 1.5rem;
+  color: #262d3d; }
+.access-connection__feedback-link {
+  color: #204ecf;
+  cursor: pointer; }
+
+.groups__container {
+  min-height: calc(100vh - 7.1rem); }
+.groups__title {
+  color: #556182;
+  font-weight: 600;
+  font-size: 20px; }
+.groups__nav {
+  margin-top: 2rem; }
+.groups__item {
+  font-size: 1.4rem; }
+  .groups__item a {
+    color: #556182; }
+  .groups__item img {
+    padding-left: 1rem; }
+  .groups__item:not(:first-child) {
+    margin-left: 1rem; }
+.groups__cards .row {
+  max-width: 80rem;
+  justify-content: space-between;
+  padding-left: 1.5rem; }
+  @media only screen and (max-width: 700px) {
+    .groups__cards .row {
+      justify-content: center;
+      padding-left: 0; } }
+.groups__card {
+  width: 37rem;
+  max-width: 37rem;
+  height: 36rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+  background: #ffffff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06); }
+  @media only screen and (max-width: 768px) {
+    .groups__card img {
+      width: 100%; } }
+.groups__card-dec {
+  padding: 3rem 0 0 1.5rem; }
+  .groups__card-dec h6 {
+    font-size: 1.8rem;
+    color: #556182; }
+  .groups__card-dec p, .groups__card-dec .access-connection__list li, .access-connection__list .groups__card-dec li {
+    font-size: 1.4rem;
+    color: #556182;
+    margin: 1.7rem 0 1.7rem 0; }
+  .groups__card-dec a {
+    color: #4282d9;
+    font-size: 1.6rem;
+    font-weight: bold; }
+
+.breadcrumb {
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,84 @@
+.groups {
+  &__container {
+    min-height: calc(100vh - 7.1rem);
+  }
+
+  &__title {
+    color: $light-gray;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &__nav {
+    margin-top: 2rem;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    a {
+      color: $light-gray;
+    }
+
+    img {
+      padding-left: 1rem;
+    }
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+  &__cards {
+    .row {
+      max-width: 80rem;
+      justify-content: space-between;
+      padding-left: 1.5rem;
+
+      @media only screen and(max-width:700px) {
+        justify-content: center;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__card {
+    width: 37rem;
+    max-width: 37rem;
+    height: 36rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    background: #ffffff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+
+    @media only screen and(max-width:768px) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__card-dec {
+    padding: 3rem 0 0 1.5rem;
+
+    h6 {
+      font-size: 1.8rem;
+      color: $light-gray;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $light-gray;
+      margin: 1.7rem 0 1.7rem 0;
+    }
+
+    a {
+      color: #4282d9;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
