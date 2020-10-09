@@ -22,6 +22,15 @@
 	}
 }
 
+.group-call__chat-menu {
+	.nav-link.active {
+		color: $brown;
+		font-weight: bold;
+		border-bottom: 2px solid $brown;
+		background-color: transparent;
+	}
+}
+
 .modal-backdrop {
 	z-index: 1;
 	background-color: rgba(42, 52, 80, 0.85);
