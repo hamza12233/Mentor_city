@@ -107,10 +107,6 @@
 	background-position: top;
 	background-size: cover;
 
-	// @media only screen and (max-width:768px){
-	//     background-size: contain;
-	// }
-
 	&__middle-container {
 		display: flex;
 		min-height: calc(100vh - 30rem);
@@ -163,6 +159,10 @@
 		right: 7rem;
 		transition: all 0.3s;
 		border-radius: 50%;
+
+		@media only screen and (max-width: 992px) {
+			display: none;
+		}
 
 		@media only screen and (max-width: 850px) {
 			position: relative;
@@ -217,6 +217,7 @@
 	}
 
 	&__profile {
+		flex-shrink: 0;
 		width: 7rem;
 		height: 7rem;
 		border-radius: 50%;
@@ -237,6 +238,7 @@
 		display: flex;
 		overflow-x: scroll;
 		align-items: center;
+		@include horizontalBar($border-gray);
 	}
 
 	&__tile {
@@ -282,14 +284,24 @@
 			position: absolute;
 			bottom: 7rem;
 		}
+
+		.audiocall__icon {
+			&:nth-last-child(2) {
+				max-width: 4.2rem;
+				height: 4.2rem;
+			}
+		}
 	}
 
 	&__member {
 		position: relative;
-		height: 100%;
+		// height: calc((100vh - 7.1rem - 10.8rem) / 2);
+		height: 50vh;
 
 		img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 
 		a {
@@ -301,6 +313,8 @@
 
 	&__chat-menu {
 		flex: 0 0 30rem;
+		transform: translateX(100%);
+		transition: all 0.3s;
 
 		.nav-tabs {
 			padding: 1rem 2rem 0 2rem;
@@ -313,6 +327,22 @@
 		.nav-link {
 			color: $light-gray;
 			border-bottom: 2px solid transparent;
+			position: relative;
+		}
+
+		.notification {
+			position: absolute;
+			top: 0.2rem;
+			right: -0.5rem;
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+			border: 1px solid $light-gray;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #fff;
+			color: $light-gray;
 		}
 
 		svg {
@@ -320,6 +350,82 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 0.5rem;
+		}
+	}
+
+	&__chat-menu.chat-visible {
+		position: fixed;
+		top: 7.1rem;
+		right: 0;
+		width: 30rem;
+		transform: translateX(0);
+		transition: all 0.3s;
+	}
+}
+
+.group-chat {
+	&__chatting-box {
+		padding: 2rem;
+		position: relative;
+		min-height: calc(100vh - 7.1rem - 66px);
+	}
+
+	&__messenger {
+		@include scrollBar($border-color);
+		// max-height: calc(100vh - 7.1rem - 66px - 9rem);
+		height: calc(100vh - 7.1rem - 66px - 9rem);
+		overflow-y: scroll;
+	}
+
+	&__message {
+		display: flex;
+		align-items: flex-start;
+		padding: 2rem 0;
+
+		img {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+		}
+
+		p {
+			padding: 1rem;
+			background: #ffffff;
+			box-shadow: 1px 1px 6px rgba(85, 97, 130, 0.13);
+			border-radius: 10px;
+		}
+
+		&--left {
+			flex-direction: row;
+
+			img {
+				margin-right: 1rem;
+			}
+		}
+
+		&--right {
+			flex-direction: row-reverse;
+
+			p {
+				margin-right: 1rem;
+			}
+		}
+	}
+
+	&__send-box {
+		margin-top: 2rem;
+	}
+
+	&__input {
+		width: 100%;
+		height: 3rem;
+		padding: 1rem;
+		border: 1px solid #4282d9;
+		color: $light-gray;
+		font-size: 1.2rem;
+
+		&:focus {
+			outline: 0;
 		}
 	}
 }

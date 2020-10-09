@@ -1430,6 +1430,9 @@ p, .access-connection__list li {
     right: 7rem;
     transition: all 0.3s;
     border-radius: 50%; }
+    @media only screen and (max-width: 992px) {
+      .audiocalling__chat-icon {
+        display: none; } }
     @media only screen and (max-width: 850px) {
       .audiocalling__chat-icon {
         position: relative;
@@ -1468,6 +1471,7 @@ p, .access-connection__list li {
     display: flex;
     align-items: center; }
   .group-call__profile {
+    flex-shrink: 0;
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
@@ -1481,7 +1485,22 @@ p, .access-connection__list li {
   .group-call__all-members {
     display: flex;
     overflow-x: scroll;
-    align-items: center; }
+    align-items: center;
+    /* Scrollbar Styling */ }
+    .group-call__all-members::-webkit-scrollbar {
+      height: 8px; }
+    .group-call__all-members::-webkit-scrollbar-button {
+      width: 100%;
+      height: 8px; }
+    .group-call__all-members::-webkit-scrollbar-track {
+      background: #eee;
+      border-radius: 1rem; }
+    .group-call__all-members::-webkit-scrollbar-thumb {
+      background: #dfe0eb;
+      border: thin solid #dfe0eb;
+      border-radius: 0.5rem; }
+    .group-call__all-members::-webkit-scrollbar-thumb:hover {
+      background: #cfd1e1; }
   .group-call__tile {
     flex-shrink: 0;
     width: 7rem;
@@ -1512,17 +1531,24 @@ p, .access-connection__list li {
     .group-call__members .audiocall__icons {
       position: absolute;
       bottom: 7rem; }
+    .group-call__members .audiocall__icon:nth-last-child(2) {
+      max-width: 4.2rem;
+      height: 4.2rem; }
   .group-call__member {
     position: relative;
-    height: 100%; }
+    height: 50vh; }
     .group-call__member img {
-      width: 100%; }
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
     .group-call__member a {
       position: absolute;
       left: 1rem;
       bottom: 1rem; }
   .group-call__chat-menu {
-    flex: 0 0 30rem; }
+    flex: 0 0 30rem;
+    transform: translateX(100%);
+    transition: all 0.3s; }
     .group-call__chat-menu .nav-tabs {
       padding: 1rem 2rem 0 2rem;
       display: flex;
@@ -1531,12 +1557,88 @@ p, .access-connection__list li {
       background: #eff3fc; }
     .group-call__chat-menu .nav-link {
       color: #556182;
-      border-bottom: 2px solid transparent; }
+      border-bottom: 2px solid transparent;
+      position: relative; }
+    .group-call__chat-menu .notification {
+      position: absolute;
+      top: 0.2rem;
+      right: -0.5rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 1px solid #556182;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      color: #556182; }
     .group-call__chat-menu svg {
       display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 0.5rem; }
+  .group-call__chat-menu.chat-visible {
+    position: fixed;
+    top: 7.1rem;
+    right: 0;
+    width: 30rem;
+    transform: translateX(0);
+    transition: all 0.3s; }
+
+.group-chat__chatting-box {
+  padding: 2rem;
+  position: relative;
+  min-height: calc(100vh - 7.1rem - 66px); }
+.group-chat__messenger {
+  /* Scrollbar Styling */
+  height: calc(100vh - 7.1rem - 66px - 9rem);
+  overflow-y: scroll; }
+  .group-chat__messenger::-webkit-scrollbar {
+    width: 8px; }
+  .group-chat__messenger::-webkit-scrollbar-button {
+    width: 8px;
+    height: 1px; }
+  .group-chat__messenger::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 1rem; }
+  .group-chat__messenger::-webkit-scrollbar-thumb {
+    background: #d8d9dc;
+    border: thin solid #d8d9dc;
+    border-radius: 0.5rem; }
+  .group-chat__messenger::-webkit-scrollbar-thumb:hover {
+    background: #cbccd0; }
+.group-chat__message {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 0; }
+  .group-chat__message img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; }
+  .group-chat__message p, .group-chat__message .access-connection__list li, .access-connection__list .group-chat__message li {
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 1px 1px 6px rgba(85, 97, 130, 0.13);
+    border-radius: 10px; }
+  .group-chat__message--left {
+    flex-direction: row; }
+    .group-chat__message--left img {
+      margin-right: 1rem; }
+  .group-chat__message--right {
+    flex-direction: row-reverse; }
+    .group-chat__message--right p, .group-chat__message--right .access-connection__list li, .access-connection__list .group-chat__message--right li {
+      margin-right: 1rem; }
+.group-chat__send-box {
+  margin-top: 2rem; }
+.group-chat__input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border: 1px solid #4282d9;
+  color: #556182;
+  font-size: 1.2rem; }
+  .group-chat__input:focus {
+    outline: 0; }
 
 .access-connection__container {
   min-height: calc(100vh - 7.1rem); }

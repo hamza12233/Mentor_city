@@ -243,7 +243,7 @@
 		<main class="main">
 			<div class="main__aside"></div>
 			<section class="group-call">
-				<div class="group-call__container shrink">
+				<div class="group-call__container">
 					<div class="group-call__topbar">
 						<div class="group-call__profile">
 							<img src="img/profile-img.png" alt="" />
@@ -319,6 +319,24 @@
 										<img src="img/icons/call_icons/mute-icon-sm.svg" alt="" />
 									</button>
 								</div>
+								<div class="group-call__tile">
+									<img src="img/video-member-11.png" alt="" />
+									<button>
+										<img src="img/icons/call_icons/mute-icon-sm.svg" alt="" />
+									</button>
+								</div>
+								<div class="group-call__tile">
+									<img src="img/video-member-11.png" alt="" />
+									<button>
+										<img src="img/icons/call_icons/mute-icon-sm.svg" alt="" />
+									</button>
+								</div>
+								<div class="group-call__tile">
+									<img src="img/video-member-11.png" alt="" />
+									<button>
+										<img src="img/icons/call_icons/mute-icon-sm.svg" alt="" />
+									</button>
+								</div>
 							</div>
 							<div class="group-call__right-indicator">
 								<img src="img/icons/call_icons/right-indicator.svg" alt="" />
@@ -352,7 +370,7 @@
 								</div>
 							</div>
 						</div>
-
+						
 						<!-- call icons -->
 						<div class="audiocall__icons">
 							<div class="audiocall__icon audiocalling__icon--stroke">
@@ -572,7 +590,7 @@
 						<li class="nav-item">
 							<a
 								class="nav-link"
-								id="home-tab"
+								id="people-tab"
 								data-toggle="tab"
 								href="#people"
 								role="tab"
@@ -599,14 +617,14 @@
 										fill="#556182"
 									/>
 								</svg>
-
+								<span class="notification">20</span>
 								People</a
 							>
 						</li>
 						<li class="nav-item">
 							<a
 								class="nav-link active"
-								id="profile-tab"
+								id="chat-tab"
 								data-toggle="tab"
 								href="#chat"
 								role="tab"
@@ -634,7 +652,7 @@
 						<li class="nav-item">
 							<a
 								class="nav-link"
-								id="contact-tab"
+								id="settings-tab"
 								data-toggle="tab"
 								href="#settings"
 								role="tab"
@@ -668,17 +686,47 @@
 					</ul>
 					<div class="tab-content" id="myTabContent">
 						<div
-							class="tab-pane fade show active"
+							class="tab-pane fade "
 							id="people"
 							role="tabpanel"
-							aria-labelledby="home-tab"
+							aria-labelledby="people-tab"
 						>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsa!
 						</div>
-						<div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="profile-tab">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsa!
+						<div class="tab-pane fade show active" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+							<div class="group-chat__chatting-box">
+								<div class="group-chat__messenger">
+									<div class="group-chat__message group-chat__message--left">
+										<img src="img/chat-profile-1.png" alt="message">
+										<p>Hi Martin</p>
+									</div>
+
+									<div class="group-chat__message group-chat__message--left">
+										<img src="img/chat-profile-1.png" alt="message">
+										<p>Hi Martin</p>
+									</div>
+
+									<div class="group-chat__message group-chat__message--left">
+										<img src="img/chat-profile-2.png" alt="message">
+										<p>Hi Sarah</p>
+									</div>
+									
+									<div class="group-chat__message group-chat__message--right">
+										<img src="img/chat-profile-3.png" alt="message">
+										<p>Guys, i need some help with setting up new account for a member... </p>
+									</div>
+
+									<div class="group-chat__message group-chat__message--left">
+										<img src="img/chat-profile-4.png" alt="message">
+										<p>Sarah, I can’t hear, you are on Mute - please check</p>
+									</div>
+								</div>
+								<div class="group-chat__send-box">
+									<input type="text" class="group-chat__input" placeholder="Type here">
+								</div>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsa!
 						</div>
 					</div>
