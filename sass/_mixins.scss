@@ -49,3 +49,26 @@
 		background: darken($color, 5%);
 	}
 }
+
+@mixin horizontalBar($color) {
+	/* Scrollbar Styling */
+	&::-webkit-scrollbar {
+		height: 8px;
+	}
+	&::-webkit-scrollbar-button {
+		width: 100%;
+		height: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background: #eee;
+		border-radius: 1rem;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $color;
+		border: thin solid $color;
+		border-radius: 0.5rem;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: darken($color, 5%);
+	}
+}
