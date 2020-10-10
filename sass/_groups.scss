@@ -34,7 +34,7 @@
       justify-content: space-between;
       padding-left: 1.5rem;
 
-      @media only screen and(max-width:700px) {
+      @media only screen and(max-width:600px) {
         justify-content: center;
         padding-left: 0;
       }
@@ -63,6 +63,7 @@
     h6 {
       font-size: 1.8rem;
       color: $light-gray;
+      font-weight: 700;
     }
 
     p {
@@ -74,7 +75,7 @@
     a {
       color: #4282d9;
       font-size: 1.6rem;
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 }

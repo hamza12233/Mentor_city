@@ -1603,7 +1603,7 @@ p, .access-connection__list li {
   max-width: 80rem;
   justify-content: space-between;
   padding-left: 1.5rem; }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 600px) {
     .groups__cards .row {
       justify-content: center;
       padding-left: 0; } }
@@ -1622,7 +1622,8 @@ p, .access-connection__list li {
   padding: 3rem 0 0 1.5rem; }
   .groups__card-dec h6 {
     font-size: 1.8rem;
-    color: #556182; }
+    color: #556182;
+    font-weight: 700; }
   .groups__card-dec p, .groups__card-dec .access-connection__list li, .access-connection__list .groups__card-dec li {
     font-size: 1.4rem;
     color: #556182;
@@ -1630,7 +1631,7 @@ p, .access-connection__list li {
   .groups__card-dec a {
     color: #4282d9;
     font-size: 1.6rem;
-    font-weight: bold; }
+    font-weight: 700; }
 
 .breadcrumb {
   background-color: transparent; }
