@@ -1640,6 +1640,42 @@ p, .access-connection__list li {
   .group-chat__input:focus {
     outline: 0; }
 
+.awards__cards {
+  width: 100%;
+  flex-flow: wrap;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+.awards__card {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  border-radius: 1rem;
+  height: 25rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem; }
+  @media screen and (max-width: 1300px) {
+    .awards__card {
+      width: 40%; } }
+  @media screen and (max-width: 600px) {
+    .awards__card {
+      width: 90%; } }
+  .awards__card-title {
+    font-size: 3.6rem !important; }
+  .awards__card h4 {
+    margin: 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #556182; }
+  .awards__card p, .awards__card .access-connection__list li, .access-connection__list .awards__card li {
+    font-size: 1.4rem;
+    color: #556182; }
+
 .access-connection__container {
   min-height: calc(100vh - 7.1rem); }
 .access-connection__title {
@@ -1685,64 +1721,74 @@ p, .access-connection__list li {
   color: #204ecf;
   cursor: pointer; }
 
-.groups__container {
-  min-height: calc(100vh - 7.1rem); }
 .groups__title {
-  color: #556182;
   font-weight: 600;
-  font-size: 20px; }
-.groups__nav {
-  margin-top: 2rem; }
-.groups__item {
-  font-size: 1.4rem; }
-  .groups__item a {
-    color: #556182; }
-  .groups__item img {
-    padding-left: 1rem; }
-  .groups__item:not(:first-child) {
+  font-size: 2rem;
+  color: #556182; }
+.groups__nav-list {
+  margin-top: 3rem; }
+  .groups__nav-list ul {
+    display: flex; }
+    .groups__nav-list ul li {
+      padding-left: 1rem; }
+      .groups__nav-list ul li:not(:first-child) {
+        padding-left: 1rem; }
+  .groups__nav-list a {
+    color: #556182;
+    font-weight: normal;
+    font-size: 1.4rem; }
+  .groups__nav-list img {
     margin-left: 1rem; }
-.groups__cards .row {
-  max-width: 80rem;
-  justify-content: space-between;
-  padding-left: 1.5rem; }
-  @media only screen and (max-width: 600px) {
-    .groups__cards .row {
-      justify-content: center;
-      padding-left: 0; } }
+.groups__cards {
+  width: 90%;
+  flex-flow: wrap;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  @media screen and (max-width: 768px) {
+    .groups__cards {
+      width: 100%; } }
 .groups__card {
-  flex: 50%;
-  max-width: 37rem;
-  height: 36rem;
-  border-radius: 8px;
-  margin-top: 3rem;
-  background: #ffffff;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06); }
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  border-radius: 1rem;
+  height: auto;
+  width: 40%;
+  margin: 2rem;
+  margin-left: 0;
+  padding-bottom: 2rem; }
+  @media screen and (max-width: 1300px) {
+    .groups__card {
+      width: 40%; } }
+  @media screen and (max-width: 850px) {
+    .groups__card {
+      width: 60%; } }
+  @media screen and (max-width: 768px) {
+    .groups__card {
+      width: 45%; } }
+  @media screen and (max-width: 550px) {
+    .groups__card {
+      width: 100%;
+      flex-direction: column;
+      margin-right: 0; } }
   .groups__card img {
     width: 100%; }
-  @media only screen and (max-width: 1030px) {
-    .groups__card {
-      flex: 100%; } }
-  @media only screen and (max-width: 768px) {
-    .groups__card {
-      flex: 100%; }
-      .groups__card img {
-        width: 100%; } }
-.groups__card-dec {
-  padding: 3rem 0 0 1.5rem; }
-  .groups__card-dec h6 {
+.groups__card-desc {
+  padding: 2.5rem 0 0 2rem; }
+  .groups__card-desc h6 {
+    font-weight: bold;
     font-size: 1.8rem;
-    color: #556182;
-    font-weight: 700; }
-  .groups__card-dec p, .groups__card-dec .access-connection__list li, .access-connection__list .groups__card-dec li {
+    color: #556182; }
+  .groups__card-desc p, .groups__card-desc .access-connection__list li, .access-connection__list .groups__card-desc li {
+    font-weight: 300;
     font-size: 1.4rem;
     color: #556182;
-    margin: 1.7rem 0 1.7rem 0; }
-  .groups__card-dec a {
+    margin: 1.5rem 0; }
+  .groups__card-desc a {
     color: #4282d9;
-    font-size: 1.6rem;
-    font-weight: 700; }
-
-.breadcrumb {
-  background-color: transparent; }
+    font-weight: bold;
+    font-size: 1.6rem; }
 
 /*# sourceMappingURL=main.css.map */
