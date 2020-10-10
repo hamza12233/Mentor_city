@@ -42,7 +42,7 @@
   }
 
   &__card {
-    width: 37rem;
+    flex: 50%;
     max-width: 37rem;
     height: 36rem;
     border-radius: 8px;
@@ -50,7 +50,17 @@
     background: #ffffff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 
+    img {
+      width: 100%;
+    }
+
+    @media only screen and(max-width:1030px) {
+      flex: 100%;
+    }
+
     @media only screen and(max-width:768px) {
+      flex: 100%;
+
       img {
         width: 100%;
       }
