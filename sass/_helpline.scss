@@ -1,0 +1,87 @@
+.helpline {
+  &__header {
+    background: url(../img/hepline-image.png) no-repeat;
+    width: 100%;
+    height: 17.5rem;
+  }
+
+  &__tilte {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 2rem 3rem;
+  }
+
+  &__search-input {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__search-wrap {
+    width: 60%;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 3rem;
+      border-radius: 3rem;
+      border: 1px solid #ffffff;
+      padding: 1rem 1rem 1rem 4rem;
+      font-size: 1.3rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    top: 7px;
+    left: 13px;
+  }
+
+  &__container {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 25%;
+      padding: 1rem 3rem;
+      border: 1px solid $light-gray;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      @media screen and(max-width:1000px) {
+        flex-direction: column;
+      }
+
+      &:hover {
+        background-color: $light-gray;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $light-gray;
+    font-size: 1.8rem;
+
+    @media screen and(max-width:1120px) {
+      font-size: 1.4rem;
+    }
+  }
+}

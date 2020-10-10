@@ -1640,6 +1640,23 @@ p, .access-connection__list li {
   .group-chat__input:focus {
     outline: 0; }
 
+.awards__container {
+  padding: 0rem !important; }
+  .awards__container ul {
+    padding-left: 30rem; }
+  .awards__container li {
+    justify-content: center;
+    align-items: center; }
+  .awards__container a {
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #262d3d;
+    padding: 2rem;
+    margin-left: 1rem; }
+    .awards__container a:hover {
+      display: block;
+      background-color: #556182;
+      color: #ffffff; }
 .awards__cards {
   width: 100%;
   flex-flow: wrap;
@@ -1653,7 +1670,7 @@ p, .access-connection__list li {
   border-radius: 0.8rem;
   border-radius: 1rem;
   height: 25rem;
-  width: 20%;
+  width: 21%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1675,6 +1692,69 @@ p, .access-connection__list li {
   .awards__card p, .awards__card .access-connection__list li, .access-connection__list .awards__card li {
     font-size: 1.4rem;
     color: #556182; }
+
+.awards__active {
+  background-color: #556182;
+  color: #ffffff !important; }
+
+.helpline__header {
+  background: url(../img/hepline-image.png) no-repeat;
+  width: 100%;
+  height: 17.5rem; }
+.helpline__tilte {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 2rem 3rem; }
+.helpline__search-input {
+  display: flex;
+  justify-content: center; }
+.helpline__search-wrap {
+  width: 60%;
+  position: relative; }
+  .helpline__search-wrap input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 1px solid #ffffff;
+    padding: 1rem 1rem 1rem 4rem;
+    font-size: 1.3rem; }
+    .helpline__search-wrap input:focus {
+      outline: none; }
+.helpline__search-icon {
+  position: absolute;
+  top: 7px;
+  left: 13px; }
+.helpline__container {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap; }
+  .helpline__container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .helpline__container li {
+    width: 25%;
+    padding: 1rem 3rem;
+    border: 1px solid #556182;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    @media screen and (max-width: 1000px) {
+      .helpline__container li {
+        flex-direction: column; } }
+    .helpline__container li:hover {
+      background-color: #556182; }
+      .helpline__container li:hover a {
+        color: #ffffff; }
+.helpline a {
+  color: #556182;
+  font-size: 1.8rem; }
+  @media screen and (max-width: 1120px) {
+    .helpline a {
+      font-size: 1.4rem; } }
 
 .access-connection__container {
   min-height: calc(100vh - 7.1rem); }
