@@ -1,89 +1,51 @@
 .awards {
-  &__container {
-    padding: 0rem !important;
+	.box-tabs {
+		margin-bottom: 2rem;
+	}
 
-    @media screen and(max-width:1300px) {
-      box-shadow: $card-shadow;
-      background-color: #ffffff;
-    }
+	&__cards {
+		width: 100%;
+		flex-flow: wrap;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		text-align: center;
+	}
 
-    ul {
-      padding-left: 30rem;
+	&__card {
+		@include card-style;
+		border-radius: 1rem;
+		height: 25rem;
+		width: 21%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem;
 
-      @media screen and(max-width:1050px) {
-        padding-left: 0;
-        display: flex;
-        justify-content: center;
-      }
-    }
+		@media screen and(max-width:1300px) {
+			width: 40%;
+		}
 
-    li {
-      justify-content: center;
-      align-items: center;
-    }
+		@media screen and(max-width:600px) {
+			width: 90%;
+		}
 
-    a {
-      font-weight: normal;
-      font-size: 1.6rem;
-      color: $sidebar-bg;
-      padding: 2rem;
-      margin-left: 1rem;
+		&-title {
+			font-size: 3.6rem !important;
+		}
 
-      &:hover {
-        display: block;
-        background-color: $light-gray;
-        color: #ffffff;
-      }
-    }
-  }
+		h4 {
+			margin: 2rem;
+			font-weight: 600;
+			font-size: 1.6rem;
+			color: $light-gray;
+		}
 
-  &__cards {
-    width: 100%;
-    flex-flow: wrap;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  &__card {
-    @include card-style;
-    border-radius: 1rem;
-    height: 25rem;
-    width: 21%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-
-    @media screen and(max-width:1300px) {
-      width: 40%;
-    }
-
-    @media screen and(max-width:600px) {
-      width: 90%;
-    }
-
-    &-title {
-      font-size: 3.6rem !important;
-    }
-
-    h4 {
-      margin: 2rem;
-      font-weight: 600;
-      font-size: 1.6rem;
-      color: $light-gray;
-    }
-
-    p {
-      font-size: 1.4rem;
-      color: $light-gray;
-    }
-  }
-}
-
-.awards__active {
-  background-color: $light-gray;
-  color: #ffffff !important;
+		p {
+			font-size: 1.4rem;
+			color: $light-gray;
+		}
+	}
 }
