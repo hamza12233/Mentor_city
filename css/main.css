@@ -1070,6 +1070,12 @@ p, .access-connection__list li {
   max-width: 37rem !important;
   width: 37rem !important; }
 
+.edit-profile-btn {
+  margin: 0;
+  position: absolute;
+  right: 35px;
+  bottom: 20px; }
+
 .chat__title {
   font-size: 2rem;
   color: #455065;
