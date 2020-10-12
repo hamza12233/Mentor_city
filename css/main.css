@@ -1827,6 +1827,10 @@ p, .access-connection__list li {
     color: #556182;
     font-size: 1.5rem; }
 
+.helpline-active {
+  background-color: #556182 !important;
+  color: #ffffff !important; }
+
 .access-connection__container {
   min-height: calc(100vh - 7.1rem); }
 .access-connection__title {

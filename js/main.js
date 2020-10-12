@@ -44,6 +44,13 @@ $(document).ready(function () {
   });
 });
 
+//for helpline-2
+$(document).ready(function () {
+  $(".helpline_2__container .nav-link").click(function () {
+    $(".nav-link").removeClass("helpline-active");
+    $(this).addClass("helpline-active");
+  });
+});
 // Chat activate
 chatActivate.addEventListener("click", (e) => {
   e.preventDefault();
