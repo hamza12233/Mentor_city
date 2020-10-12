@@ -252,40 +252,121 @@
     <!-- Main starts -->
     <main class="main">
       <div class="main__aside"></div>
-      <section class="main__primary helpline">
-        <div class="helpline__header mb-5">
-          <p class="helpline__tilte">Helpline</p>
-          <div class="helpline__search-input">
-            <div class="helpline__search-wrap">
-              <img
-                src="./img/icons/icon-search.svg"
-                class="helpline__search-icon"
-                alt="helpline-search-icon"
-              />
-              <input type="text" placeholder="Search Keyword" />
+      <section class="main__primary helpline_2">
+        <div class="helpline_2__header mb-5">
+          <a class="helpline_2__tile_1">Helpline</a>
+          <span>/</span>
+          <a class="helpline_2__tile_2">Get Started</a>
+        </div>
+        <div class="primary-container helpline_2__container">
+          <aside class="helpline_2__sidebar">
+            <p>Articles in this section</p>
+            <div
+              class="nav flex-column"
+              id="resources"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link"
+                id="v-pills-resources-tab"
+                data-toggle="pill"
+                href="#v-pills-resources"
+                role="tab"
+                aria-controls="v-pills-resources"
+                aria-selected="true"
+                >How do I add Resources?</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-member-group-tab"
+                data-toggle="pill"
+                href="#v-pills-member-group"
+                role="tab"
+                aria-controls="v-pills-member-group"
+                aria-selected="false"
+                >Add member to group</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-Publishing-tab"
+                data-toggle="pill"
+                href="#v-pills-Publishing"
+                role="tab"
+                aria-controls="v-pills-Publishing"
+                aria-selected="false"
+                >Publishing an Article</a
+              >
+
+              <a
+                class="nav-link"
+                id="v-pills-new-Section-tab"
+                data-toggle="pill"
+                href="#v-pills-new-Section"
+                role="tab"
+                aria-controls="v-pills-new-Section"
+                aria-selected="false"
+                >Creating new Section</a
+              >
+            </div>
+          </aside>
+          <div class="helpline_2__right-container">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-resources"
+                role="tabpanel"
+                aria-labelledby="v-pills-resources-tab"
+              >
+                <!-- section 1 -->
+                <h3>How do I Add Resources?</h3>
+                <p>
+                  Resources allow Admins and users to post resources, in the
+                  form of files, on the platform for others to see and use. The
+                  resources are displayed within folders on the Resources page.
+                  It is important to note that all files must be added to a
+                  folder and cannot stand alone.
+                </p>
+
+                <img src="./img/helpline-img.png" alt="helpline-img" />
+                <h3>Adding a New Resource Folder</h3>
+                <p>
+                  Users who have the relevant permissions to post content on the
+                  resources page will be able to add new resource folders. Once
+                  they click the New Folder button on the top right, they will
+                  be taken to the “new folder” screen. Here they will be
+                  prompted to add.
+                </p>
+                <!-- section end -->
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-member-group"
+                role="tabpanel"
+                aria-labelledby="v-pills-member-group-tab"
+              >
+                <h1>add member</h1>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-Publishing"
+                role="tabpanel"
+                aria-labelledby="v-pills-Publishing-tab"
+              >
+                <h1>publishing article</h1>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-new-Section"
+                role="tabpanel"
+                aria-labelledby="v-pills-new-Section-tab"
+              >
+                <h1>new section</h1>
+              </div>
             </div>
           </div>
-          <img
-            src="./img/icons/helpline_icons/helpline-charectors-icon.svg"
-            class="helpline__top-img"
-            alt="helpline-charectors-icon"
-          />
-        </div>
-        <div class="primary-container helpline__container">
-          <ul>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Calendar Invite</a></li>
-            <li><a href="#">Message</a></li>
-            <li><a href="#">Groups</a></li>
-            <li><a href="#">Meetings</a></li>
-            <li><a href="#">Video Calls</a></li>
-            <li><a href="#">Mentoring</a></li>
-            <li><a href="#">Agreement</a></li>
-            <li><a href="#">Engaements</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile Settings</a></li>
-            <li><a href="#">Getting Started</a></li>
-          </ul>
         </div>
       </section>
     </main>

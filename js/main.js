@@ -6,21 +6,22 @@ const availableContainer = document.querySelector(".dropdown-box");
 const chatActivate = document.querySelector(".audiocalling__chat-icon");
 const chatContainer = document.querySelector(".group-call__container");
 const chatMenu = document.querySelector(".group-call__chat-menu");
+const awards__active = document.querySelector(".awards__active");
 
 // Ham-burger
 bars.addEventListener("click", (e) => {
-	e.preventDefault();
-	bars.style.display = "none";
-	close.style.display = "block";
-	sideBar.classList.add("sidebar-transform");
+  e.preventDefault();
+  bars.style.display = "none";
+  close.style.display = "block";
+  sideBar.classList.add("sidebar-transform");
 });
 
 // Sidebar
 close.addEventListener("click", (e) => {
-	e.preventDefault();
-	bars.style.display = "block";
-	close.style.display = "none";
-	sideBar.classList.remove("sidebar-transform");
+  e.preventDefault();
+  bars.style.display = "block";
+  close.style.display = "none";
+  sideBar.classList.remove("sidebar-transform");
 });
 
 // Available dropdown javascript
@@ -31,14 +32,21 @@ close.addEventListener("click", (e) => {
 
 // Available dropdown jquery
 $(".button--available").on("click", function (e) {
-	e.preventDefault();
-	$(".dropdown-box").toggleClass("dropdown-box-show");
+  e.preventDefault();
+  $(".dropdown-box").toggleClass("dropdown-box-show");
+});
+
+//for awards screen tabs
+$(document).ready(function () {
+  $(".awards__container .nav-link").click(function () {
+    $(".nav-link").removeClass("awards__active");
+    $(this).addClass("awards__active");
+  });
 });
 
 // Chat activate
 chatActivate.addEventListener("click", (e) => {
-	e.preventDefault();
-	chatContainer.classList.toggle("shrink");
-	chatMenu.classList.toggle("chat-visible");
-	
+  e.preventDefault();
+  chatContainer.classList.toggle("shrink");
+  chatMenu.classList.toggle("chat-visible");
 });

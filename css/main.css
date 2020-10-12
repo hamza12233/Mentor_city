@@ -1707,9 +1707,10 @@ p, .access-connection__list li {
   color: #ffffff !important; }
 
 .helpline__header {
-  background: url(../img/hepline-image.png) no-repeat;
+  background-image: linear-gradient(to left, #f2eafa, #c981a3);
   width: 100%;
-  height: 17.5rem; }
+  height: 17.5rem;
+  position: relative; }
 .helpline__tilte {
   font-weight: bold;
   font-size: 2rem;
@@ -1730,6 +1731,11 @@ p, .access-connection__list li {
     font-size: 1.3rem; }
     .helpline__search-wrap input:focus {
       outline: none; }
+.helpline__top-img {
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 14%; }
 .helpline__search-icon {
   position: absolute;
   top: 7px;
@@ -1764,6 +1770,62 @@ p, .access-connection__list li {
   @media screen and (max-width: 1120px) {
     .helpline a {
       font-size: 1.4rem; } }
+
+.helpline_2__header {
+  display: flex; }
+  .helpline_2__header span {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: #d9692a;
+    margin-top: -0.2rem; }
+.helpline_2__tile_1 {
+  font-size: 1.3rem;
+  cursor: pointer; }
+.helpline_2__tile_2 {
+  font-size: 1.3rem;
+  color: #556182;
+  cursor: pointer; }
+.helpline_2__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 950px) {
+    .helpline_2__container {
+      flex-direction: column; } }
+  @media only screen and (max-width: 950px) {
+    .helpline_2__container {
+      flex-direction: row; } }
+.helpline_2__sidebar {
+  width: 25%;
+  min-height: 5rem; }
+  .helpline_2__sidebar p, .helpline_2__sidebar .access-connection__list li, .access-connection__list .helpline_2__sidebar li {
+    color: #262d3d; }
+  .helpline_2__sidebar a {
+    background-color: #eff3fc;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    color: #556182;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center; }
+    .helpline_2__sidebar a:hover {
+      color: #ffffff;
+      background-color: #556182; }
+.helpline_2__right-container {
+  width: 70%;
+  min-height: 5rem; }
+  .helpline_2__right-container img {
+    margin: 3rem 0 2rem 0;
+    width: 100%; }
+  .helpline_2__right-container h3 {
+    font-size: 1.8rem;
+    color: #556182;
+    margin: 1rem 0; }
+  .helpline_2__right-container p, .helpline_2__right-container .access-connection__list li, .access-connection__list .helpline_2__right-container li {
+    color: #556182;
+    font-size: 1.5rem; }
 
 .access-connection__container {
   min-height: calc(100vh - 7.1rem); }

@@ -1,8 +1,9 @@
 .helpline {
   &__header {
-    background: url(../img/hepline-image.png) no-repeat;
+    background-image: linear-gradient(to left, #f2eafa, #c981a3);
     width: 100%;
     height: 17.5rem;
+    position: relative;
   }
 
   &__tilte {
@@ -33,6 +34,13 @@
         outline: none;
       }
     }
+  }
+
+  &__top-img {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    width: 14%;
   }
 
   &__search-icon {
@@ -82,6 +90,91 @@
 
     @media screen and(max-width:1120px) {
       font-size: 1.4rem;
+    }
+  }
+}
+
+.helpline_2 {
+  &__header {
+    display: flex;
+
+    span {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      color: $brown;
+      margin-top: -0.2rem;
+    }
+  }
+
+  &__tile_1 {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+  &__tile_2 {
+    font-size: 1.3rem;
+    color: $light-gray;
+    cursor: pointer;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and(max-width: 950px) {
+      flex-direction: column;
+    }
+
+    @media only screen and(max-width: 950px) {
+      flex-direction: row;
+    }
+  }
+
+  &__sidebar {
+    width: 25%;
+    min-height: 5rem;
+
+    p {
+      color: $sidebar-bg;
+    }
+
+    a {
+      background-color: $light-blue;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      border-radius: 4px;
+      color: $light-gray;
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        color: #ffffff;
+        background-color: $light-gray;
+      }
+    }
+  }
+
+  &__right-container {
+    width: 70%;
+    min-height: 5rem;
+
+    img {
+      margin: 3rem 0 2rem 0;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: $light-gray;
+      margin: 1rem 0;
+    }
+
+    p {
+      color: $light-gray;
+      font-size: 1.5rem;
     }
   }
 }
