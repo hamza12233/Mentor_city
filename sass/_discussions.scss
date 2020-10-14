@@ -101,3 +101,237 @@
     }
   }
 }
+
+.discuss-box {
+  &__container {
+  }
+
+  &__header {
+    display: flex;
+
+    span {
+      font-size: 1.8rem;
+      color: $brown;
+      padding: 0 0.3rem;
+    }
+  }
+
+  &__tile-1 {
+    font-size: 1.4rem;
+    color: $link-color;
+    font-weight: 600;
+  }
+
+  &__tile-2 {
+    font-size: 1.4rem;
+    color: $light-gray;
+    font-weight: 600;
+  }
+
+  &__primary {
+    margin-top: 3rem;
+    @include card-style;
+    padding: 2rem;
+    padding-left: 7rem;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $dark-blue;
+    }
+  }
+
+  &__desc {
+    font-size: 1.8rem;
+    color: $light-gray;
+    margin: 2rem 0 1rem 0;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footer-1 {
+    @media only screen and(max-width:925px) {
+      align-items: baseline;
+      flex-direction: column;
+
+      .discuss-box__member {
+        margin-bottom: 1.5rem;
+      }
+    }
+    @media only screen and(max-width:768px) {
+      flex-direction: row;
+    }
+    @media only screen and(max-width:570px) {
+      align-items: baseline;
+      flex-direction: column;
+
+      .discuss-box__member {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__member {
+    display: flex;
+
+    a {
+      color: $link-color;
+      font-size: 1.6rem;
+      padding-left: 1rem;
+      display: flex;
+      align-self: center;
+    }
+  }
+
+  &__replies {
+    display: flex;
+
+    img {
+      padding-left: 2.5rem;
+    }
+  }
+
+  &__reply {
+    color: $light-gray !important;
+    font-size: 1.6rem;
+  }
+
+  &__secondary {
+    position: relative;
+    padding-left: 9rem;
+
+    .discuss-box__footer {
+      font-size: 1.6rem;
+      color: $light-blue;
+    }
+  }
+
+  &__last-rep {
+    color: $light-blue;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__user {
+    color: $link-color;
+    font-size: 1.6rem;
+  }
+
+  &__new-disc {
+    font-size: 1.6rem;
+    color: $light-blue;
+  }
+
+  &__tertiary {
+    padding-left: 2rem;
+  }
+
+  &__rep {
+    color: $link-color !important;
+  }
+
+  &__user-name {
+    font-size: 1.6rem;
+    display: block;
+    margin: 1rem 0 3rem 0;
+  }
+}
+
+//discussion thresd-2
+
+.discuss-thread {
+  &__tile {
+    color: $link-color;
+  }
+
+  &__add-new-mem {
+    margin-top: 3rem;
+    color: $dark-blue;
+    font-size: 2.4rem;
+    font-weight: 600;
+    @include card-style;
+    padding: 2.5rem;
+    height: 40rem;
+    max-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__header {
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: $dark-blue;
+    }
+  }
+
+  &__editd-time {
+    color: $light-blue;
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem 0;
+    display: block;
+  }
+
+  &__user {
+    img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    a {
+      font-size: 1.6rem;
+      color: $link-color;
+    }
+  }
+
+  &__content {
+    p {
+      color: $dark-blue;
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+  &__tile-1 {
+    margin-bottom: 0.5rem;
+  }
+
+  &__tile-2 {
+    margin-bottom: 1rem;
+  }
+
+  &__disc {
+    font-weight: normal;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  &__like-reply {
+    font-size: 1.4rem;
+    color: $light-blue;
+    font-weight: normal;
+  }
+}
+
+.explamation-mark {
+  position: absolute;
+  left: 4rem;
+}
+
+.button--blue--font {
+  font-size: 1.6rem;
+}
+
+.button-reply {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0;
+}

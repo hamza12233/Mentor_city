@@ -2102,4 +2102,154 @@ p, .access-connection__list li {
     .discussions__fall h3 {
       font-size: 2rem; }
 
+.discuss-box__header {
+  display: flex; }
+  .discuss-box__header span {
+    font-size: 1.8rem;
+    color: #d9692a;
+    padding: 0 0.3rem; }
+.discuss-box__tile-1 {
+  font-size: 1.4rem;
+  color: #4282d9;
+  font-weight: 600; }
+.discuss-box__tile-2 {
+  font-size: 1.4rem;
+  color: #556182;
+  font-weight: 600; }
+.discuss-box__primary {
+  margin-top: 3rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  padding-left: 7rem; }
+  .discuss-box__primary h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #32325d; }
+.discuss-box__desc {
+  font-size: 1.8rem;
+  color: #556182;
+  margin: 2rem 0 1rem 0; }
+.discuss-box__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+@media only screen and (max-width: 925px) {
+  .discuss-box__footer-1 {
+    align-items: baseline;
+    flex-direction: column; }
+    .discuss-box__footer-1 .discuss-box__member {
+      margin-bottom: 1.5rem; } }
+@media only screen and (max-width: 768px) {
+  .discuss-box__footer-1 {
+    flex-direction: row; } }
+@media only screen and (max-width: 570px) {
+  .discuss-box__footer-1 {
+    align-items: baseline;
+    flex-direction: column; }
+    .discuss-box__footer-1 .discuss-box__member {
+      margin-bottom: 1.5rem; } }
+.discuss-box__member {
+  display: flex; }
+  .discuss-box__member a {
+    color: #4282d9;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    display: flex;
+    align-self: center; }
+.discuss-box__replies {
+  display: flex; }
+  .discuss-box__replies img {
+    padding-left: 2.5rem; }
+.discuss-box__reply {
+  color: #556182 !important;
+  font-size: 1.6rem; }
+.discuss-box__secondary {
+  position: relative;
+  padding-left: 9rem; }
+  .discuss-box__secondary .discuss-box__footer {
+    font-size: 1.6rem;
+    color: #6f6f8c; }
+.discuss-box__last-rep {
+  color: #6f6f8c;
+  font-size: 1.6rem;
+  font-weight: 400; }
+.discuss-box__user {
+  color: #4282d9;
+  font-size: 1.6rem; }
+.discuss-box__new-disc {
+  font-size: 1.6rem;
+  color: #6f6f8c; }
+.discuss-box__tertiary {
+  padding-left: 2rem; }
+.discuss-box__rep {
+  color: #4282d9 !important; }
+.discuss-box__user-name {
+  font-size: 1.6rem;
+  display: block;
+  margin: 1rem 0 3rem 0; }
+
+.discuss-thread__tile {
+  color: #4282d9; }
+.discuss-thread__add-new-mem {
+  margin-top: 3rem;
+  color: #32325d;
+  font-size: 2.4rem;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  padding: 2.5rem;
+  height: 40rem;
+  max-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+.discuss-thread__header h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #32325d; }
+.discuss-thread__editd-time {
+  color: #6f6f8c;
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 0;
+  display: block; }
+.discuss-thread__user img {
+  width: 3.2rem;
+  height: 3.2rem; }
+.discuss-thread__user a {
+  font-size: 1.6rem;
+  color: #4282d9; }
+.discuss-thread__content p, .discuss-thread__content .access-connection__list li, .access-connection__list .discuss-thread__content li {
+  color: #32325d;
+  font-size: 1.6rem;
+  font-weight: normal; }
+.discuss-thread__tile-1 {
+  margin-bottom: 0.5rem; }
+.discuss-thread__tile-2 {
+  margin-bottom: 1rem; }
+.discuss-thread__disc {
+  font-weight: normal; }
+.discuss-thread__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem; }
+.discuss-thread__like-reply {
+  font-size: 1.4rem;
+  color: #6f6f8c;
+  font-weight: normal; }
+
+.explamation-mark {
+  position: absolute;
+  left: 4rem; }
+
+.button--blue--font {
+  font-size: 1.6rem; }
+
+.button-reply {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0; }
+
 /*# sourceMappingURL=main.css.map */
