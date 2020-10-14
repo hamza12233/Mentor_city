@@ -1,0 +1,103 @@
+.discussions {
+  background: #fcfdfe;
+
+  &__container {
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $light-gray;
+  }
+
+  &__com-form {
+    border-radius: 0.8rem;
+    background: $body-bg;
+    padding: 2rem;
+    margin: 2rem 0;
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: $dark-blue;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: $dark-blue;
+      font-size: 1.8rem;
+      max-width: 90%;
+    }
+
+    &:nth-child(2) {
+      padding-left: 5rem;
+    }
+
+    &:nth-child(2) > :last-child {
+      margin-top: 6rem;
+    }
+  }
+
+  &__foter {
+    display: flex;
+    margin-top: 2rem;
+
+    img {
+      margin: 0 1rem;
+      margin-left: 0;
+    }
+  }
+
+  &__members {
+    display: flex;
+
+    p {
+      font-size: 1.6rem;
+      color: $light-blue;
+    }
+  }
+
+  &__posts {
+    display: flex;
+
+    img {
+      margin-left: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $light-blue;
+    }
+  }
+
+  &__general {
+    margin-top: 3rem;
+    border: 1px solid $link-color;
+    @include card-style;
+
+    p {
+      font-size: 1.6rem;
+      max-width: 90%;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  &__general-mem {
+    color: $link-color !important;
+  }
+
+  &__fall {
+    @include card-style;
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}

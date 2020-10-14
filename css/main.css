@@ -1128,7 +1128,7 @@ p, .access-connection__list li {
     align-self: center;
     transition: all 0.3s; }
     .chat__box a:hover {
-      background-color: #eff3fc; }
+      background-color: #6f6f8c; }
 .chat__searchbox {
   display: flex;
   max-width: 70.2rem;
@@ -1195,7 +1195,7 @@ p, .access-connection__list li {
   .chat__contact:not(:first-child) {
     margin-top: 1rem; }
   .chat__contact:hover {
-    background-color: #eff3fc;
+    background-color: #6f6f8c;
     border-right: 3px solid #d9692a; }
 .chat__avatar {
   width: 4rem;
@@ -1235,7 +1235,7 @@ p, .access-connection__list li {
       max-width: 100%;
       text-overflow: initial; } }
 .chat .active-contact {
-  background-color: #eff3fc;
+  background-color: #6f6f8c;
   border-right: 3px solid #d9692a; }
 
 .messagebox {
@@ -1318,7 +1318,7 @@ p, .access-connection__list li {
         height: 3rem;
         width: 3rem; }
   .messagebox__desc-right {
-    background-color: #eff3fc;
+    background-color: #6f6f8c;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
     border-radius: 0.8rem;
     padding: 1.3rem;
@@ -1338,7 +1338,7 @@ p, .access-connection__list li {
       content: "";
       height: 1px;
       width: 95%;
-      background-color: #eff3fc;
+      background-color: #6f6f8c;
       top: 0;
       left: 2rem; }
     .messagebox__send-wrap input {
@@ -1822,7 +1822,7 @@ p, .access-connection__list li {
   .helpline_2__sidebar p, .helpline_2__sidebar .access-connection__list li, .access-connection__list .helpline_2__sidebar li {
     color: #262d3d; }
   .helpline_2__sidebar a {
-    background-color: #eff3fc;
+    background-color: #6f6f8c;
     padding: 1rem 1.5rem;
     cursor: pointer;
     margin-top: 1.5rem;
@@ -1970,5 +1970,136 @@ p, .access-connection__list li {
     color: #4282d9;
     font-weight: bold;
     font-size: 1.6rem; }
+
+.courses__header {
+  margin-top: 2rem;
+  position: relative; }
+  @media only screen and (max-width: 768px) {
+    .courses__header {
+      display: flex; } }
+  .courses__header input {
+    width: 60%;
+    height: 3.2rem;
+    padding-left: 3rem;
+    font-size: 1.3rem; }
+  .courses__header img {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    color: #8b94ae; }
+  .courses__header a {
+    margin-left: 1rem; }
+.courses__title {
+  margin: 2.5rem 0;
+  color: #556182;
+  font-size: 2rem;
+  font-weight: 600; }
+.courses__card {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  position: relative; }
+  @media only screen and (max-width: 768px) {
+    .courses__card {
+      margin-top: 3rem; } }
+  .courses__card img {
+    width: 100%;
+    border-radius: 0.6rem; }
+.courses__time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #262d3d;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin: 1rem;
+  font-size: 1.3rem; }
+.courses__card-desc {
+  padding: 1.5rem; }
+  .courses__card-desc h3 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #556182; }
+  .courses__card-desc p, .courses__card-desc .access-connection__list li, .access-connection__list .courses__card-desc li {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #556182;
+    margin-bottom: 4.5rem; }
+  .courses__card-desc a {
+    color: #204ecf;
+    font-size: 1.6rem; }
+.courses__view-all {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem; }
+  .courses__view-all a {
+    font-size: 1.6rem;
+    color: #204ecf; }
+
+.discussions {
+  background: #fcfdfe; }
+  .discussions__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #556182; }
+  .discussions__com-form {
+    border-radius: 0.8rem;
+    background: #f6f7f9;
+    padding: 2rem;
+    margin: 2rem 0; }
+    .discussions__com-form h3 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #32325d;
+      margin-bottom: 1.5rem; }
+    .discussions__com-form p, .discussions__com-form .access-connection__list li, .access-connection__list .discussions__com-form li {
+      color: #32325d;
+      font-size: 1.8rem;
+      max-width: 90%; }
+    .discussions__com-form:nth-child(2) {
+      padding-left: 5rem; }
+    .discussions__com-form:nth-child(2) > :last-child {
+      margin-top: 6rem; }
+  .discussions__foter {
+    display: flex;
+    margin-top: 2rem; }
+    .discussions__foter img {
+      margin: 0 1rem;
+      margin-left: 0; }
+  .discussions__members {
+    display: flex; }
+    .discussions__members p, .discussions__members .access-connection__list li, .access-connection__list .discussions__members li {
+      font-size: 1.6rem;
+      color: #6f6f8c; }
+  .discussions__posts {
+    display: flex; }
+    .discussions__posts img {
+      margin-left: 2rem; }
+    .discussions__posts p, .discussions__posts .access-connection__list li, .access-connection__list .discussions__posts li {
+      font-size: 1.6rem;
+      color: #6f6f8c; }
+  .discussions__general {
+    margin-top: 3rem;
+    border: 1px solid #4282d9;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem; }
+    .discussions__general p, .discussions__general .access-connection__list li, .access-connection__list .discussions__general li {
+      font-size: 1.6rem;
+      max-width: 90%; }
+    .discussions__general h3 {
+      font-size: 2rem; }
+  .discussions__general-mem {
+    color: #4282d9 !important; }
+  .discussions__fall {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem; }
+    .discussions__fall p, .discussions__fall .access-connection__list li, .access-connection__list .discussions__fall li {
+      font-size: 1.6rem; }
+    .discussions__fall h3 {
+      font-size: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
