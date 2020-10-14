@@ -255,8 +255,7 @@
     font-weight: 600;
     @include card-style;
     padding: 2.5rem;
-    height: 40rem;
-    max-height: 40rem;
+    min-height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

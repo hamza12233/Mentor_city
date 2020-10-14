@@ -2201,8 +2201,7 @@ p, .access-connection__list li {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   border-radius: 0.8rem;
   padding: 2.5rem;
-  height: 40rem;
-  max-height: 40rem;
+  min-height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
