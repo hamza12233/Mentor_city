@@ -2200,6 +2200,7 @@ p, .access-connection__list li {
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   border-radius: 0.8rem;
+  box-shadow: none;
   padding: 2.5rem;
   min-height: 40rem;
   display: flex;
@@ -2213,13 +2214,15 @@ p, .access-connection__list li {
   color: #6f6f8c;
   font-size: 1.4rem;
   margin: 2rem 0 1rem 0;
-  display: block; }
+  display: block;
+  font-weight: normal; }
 .discuss-thread__user img {
   width: 3.2rem;
   height: 3.2rem; }
 .discuss-thread__user a {
   font-size: 1.6rem;
-  color: #4282d9; }
+  color: #4282d9;
+  font-weight: normal; }
 .discuss-thread__content p, .discuss-thread__content .access-connection__list li, .access-connection__list .discuss-thread__content li {
   color: #32325d;
   font-size: 1.6rem;
@@ -2238,6 +2241,56 @@ p, .access-connection__list li {
   font-size: 1.4rem;
   color: #6f6f8c;
   font-weight: normal; }
+
+.replies__container {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  box-shadow: none; }
+.replies__header {
+  color: #32325d;
+  font-weight: normal;
+  font-size: 2rem;
+  border-bottom: 2px solid #b8c1d9;
+  padding-bottom: 1.3rem;
+  display: block; }
+.replies__edited {
+  font-size: 1.4rem;
+  color: #6f6f8c;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem; }
+.replies__user {
+  margin-bottom: 2.2rem;
+  display: flex;
+  align-items: center; }
+  .replies__user img {
+    width: 3.6rem;
+    height: 3.6rem; }
+.replies__user-name {
+  font-size: 1.6rem;
+  color: #4282d9;
+  margin-left: 1rem; }
+.replies__content p, .replies__content .access-connection__list li, .access-connection__list .replies__content li {
+  color: #32325d;
+  font-size: 1.8rem;
+  font-weight: normal; }
+.replies__foter {
+  display: flex;
+  justify-content: flex-end; }
+.replies__likes-box {
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4282d9; }
+.replies__reply-box {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #4282d9; }
+.replies__new-user {
+  margin-top: 2rem;
+  margin-left: 6rem; }
 
 .explamation-mark {
   position: absolute;
