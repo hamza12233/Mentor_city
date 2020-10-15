@@ -160,3 +160,20 @@
 		font-weight: bold;
 	}
 }
+
+.forward-list {
+	font-size: 1.3rem;
+	font-weight: bold;
+
+	span {
+		color: $brown;
+	}
+
+	a:first-child {
+		color: $blue;
+	}
+
+	a:last-of-type {
+		color: $light-gray;
+	}
+}
