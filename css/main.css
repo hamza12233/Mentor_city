@@ -2304,4 +2304,98 @@ p, .access-connection__list li {
   justify-content: flex-end;
   margin: 2rem 0; }
 
+.events__sidebar {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  min-height: 44rem; }
+.events__container {
+  display: flex; }
+.events__main {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem; }
+.events__events__title-1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #313e61; }
+.events__date-time {
+  color: #313e61;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 1rem 0; }
+.events__add-calender {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #204ecf; }
+.events__secondary {
+  margin-top: 4rem; }
+.events__title-2 {
+  color: #1e0a3c;
+  font-size: 1.5rem;
+  font-weight: 600; }
+.events__address {
+  color: #313e61;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 1rem 0; }
+.events__view-map {
+  color: #204ecf;
+  font-size: 1.4rem;
+  font-weight: normal; }
+.events__tertiary {
+  margin-top: 3.5rem; }
+.events__title-3 {
+  color: #1e0a3c;
+  font-size: 1.5rem;
+  font-weight: 600; }
+.events__free-tile {
+  color: #d9692a;
+  font-size: 2rem;
+  font-weight: 600; }
+.events__foter {
+  margin-top: 4rem; }
+.events__register {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.5rem 3rem; }
+.events__main {
+  padding: 2rem;
+  min-height: 44rem; }
+.events__primary-tile-1 {
+  font-weight: 700;
+  color: #556182;
+  font-size: 2rem; }
+.events__primary-tile-2 {
+  font-size: 1.4rem;
+  color: #6f7287;
+  font-weight: normal;
+  margin-top: 1rem; }
+.events__primary-tile-3 {
+  font-weight: 600;
+  color: #556182;
+  font-size: 1.6rem;
+  margin: 2rem 0 2.5rem 0;
+  display: block; }
+.events__secondary-tile-1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #313e61;
+  margin: 2rem 0; }
+.events__secondary-tile-2 {
+  font-size: 1.5rem;
+  color: #6f7287;
+  font-weight: normal; }
+.events__tertiary-tile-1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #313e61;
+  margin-top: 4rem; }
+.events__tertiary-tile-2 {
+  font-size: 1.5rem;
+  color: #6f7287;
+  font-weight: normal;
+  margin-top: 2rem; }
+
 /*# sourceMappingURL=main.css.map */
