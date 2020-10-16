@@ -316,7 +316,8 @@ p, .access-connection__list li {
   .pill-input {
     background: #eff3fc;
     border-radius: 7px;
-    color: #556182; }
+    color: #556182;
+    margin-top: 1.5rem; }
     .pill-input:hover {
       color: #556182; }
   .pill-cross-icon {
@@ -2082,11 +2083,17 @@ p, .access-connection__list li {
     height: 3.2rem;
     padding-left: 3rem;
     font-size: 1.3rem; }
+    @media only screen and (max-width: 768px) {
+      .courses__header input {
+        padding-left: 4rem; } }
   .courses__header img {
     position: absolute;
     left: 1rem;
     top: 0.8rem;
     color: #8b94ae; }
+    @media only screen and (max-width: 768px) {
+      .courses__header img {
+        top: 0.5rem; } }
   .courses__header a {
     margin-left: 1rem; }
 .courses__title {
@@ -2099,9 +2106,9 @@ p, .access-connection__list li {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   border-radius: 0.8rem;
   position: relative; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     .courses__card {
-      margin-top: 3rem; } }
+      margin-bottom: 3rem; } }
   .courses__card img {
     width: 100%;
     border-radius: 0.6rem; }
@@ -2170,14 +2177,14 @@ p, .access-connection__list li {
       margin-left: 0; }
   .discussions__members {
     display: flex; }
-    .discussions__members p, .discussions__members .access-connection__list li, .access-connection__list .discussions__members li {
+    .discussions__members a {
       font-size: 1.6rem;
       color: #6f6f8c; }
   .discussions__posts {
     display: flex; }
     .discussions__posts img {
       margin-left: 2rem; }
-    .discussions__posts p, .discussions__posts .access-connection__list li, .access-connection__list .discussions__posts li {
+    .discussions__posts a {
       font-size: 1.6rem;
       color: #6f6f8c; }
   .discussions__general {
@@ -2235,6 +2242,15 @@ p, .access-connection__list li {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .discuss-box__footer {
+      align-items: baseline;
+      flex-direction: column; }
+      .discuss-box__footer .discuss-box__member {
+        margin-bottom: 1rem; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .discuss-box__footer {
+      flex-direction: row; } }
 @media only screen and (max-width: 925px) {
   .discuss-box__footer-1 {
     align-items: baseline;
@@ -2271,6 +2287,13 @@ p, .access-connection__list li {
   .discuss-box__secondary .discuss-box__footer {
     font-size: 1.6rem;
     color: #6f6f8c; }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .discuss-box__secondary .discuss-box__footer {
+        flex-direction: row !important; } }
+    @media only screen and (max-width: 768px) {
+      .discuss-box__secondary .discuss-box__footer {
+        flex-direction: column;
+        align-items: baseline; } }
 .discuss-box__last-rep {
   color: #6f6f8c;
   font-size: 1.6rem;
@@ -2410,12 +2433,36 @@ p, .access-connection__list li {
   border-radius: 0.8rem;
   padding: 2rem;
   min-height: 44rem; }
+  @media only screen and (max-width: 768px) {
+    .events__sidebar {
+      margin-bottom: 2rem; } }
 .events__container {
-  display: flex; }
+  display: flex;
+  margin-top: 3rem; }
+  @media only screen and (max-width: 768px) {
+    .events__container {
+      flex-direction: column !important; } }
 .events__main {
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   border-radius: 0.8rem; }
+.events__header {
+  padding-left: 1.5rem; }
+  .events__header span {
+    font-size: 1.5rem;
+    color: #d9692a; }
+.events__tile-1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4282d9; }
+.events__tile-2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4282d9; }
+.events__tile-3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #556182; }
 .events__events__title-1 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -2460,6 +2507,16 @@ p, .access-connection__list li {
   font-size: 1.6rem;
   font-weight: 700;
   padding: 0.5rem 3rem; }
+  @media only screen and (max-width: 1024px) {
+    .events__register {
+      padding: 0.5rem 0.7rem !important; } }
+  @media only screen and (max-width: 768px) {
+    .events__register {
+      padding: 0.5rem 2.5rem !important; } }
+  @media only screen and (max-width: 1260px) {
+    .events__register {
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem; } }
 .events__main {
   padding: 2rem;
   min-height: 44rem; }

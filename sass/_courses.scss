@@ -15,6 +15,10 @@
       height: 3.2rem;
       padding-left: 3rem;
       font-size: 1.3rem;
+
+      @media only screen and(max-width:768px) {
+        padding-left: 4rem;
+      }
     }
 
     img {
@@ -22,6 +26,10 @@
       left: 1rem;
       top: 0.8rem;
       color: #8b94ae;
+
+      @media only screen and(max-width:768px) {
+        top: 0.5rem;
+      }
     }
 
     a {
@@ -43,8 +51,8 @@
     @include card-style;
     position: relative;
 
-    @media only screen and(max-width:768px) {
-      margin-top: 3rem;
+    @media only screen and(max-width:1000px) {
+      margin-bottom: 3rem;
     }
 
     img {

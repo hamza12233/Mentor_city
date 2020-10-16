@@ -3,10 +3,23 @@
     @include card-style;
     padding: 2rem;
     min-height: 44rem;
+
+    @media only screen and(max-width:768px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__container {
     display: flex;
+    margin-top: 3rem;
+
+    @media only screen and(max-width:768px) {
+      flex-direction: column !important;
+    }
+
+    // @media only screen and(max-width:1024px) {
+    //   // flex-direction: row !important;
+    // }
   }
 
   &__main {
@@ -14,6 +27,33 @@
   }
 
   &__primary {
+  }
+
+  &__header {
+    padding-left: 1.5rem;
+
+    span {
+      font-size: 1.5rem;
+      color: $brown;
+    }
+  }
+
+  &__tile-1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4282d9;
+  }
+
+  &__tile-2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4282d9;
+  }
+
+  &__tile-3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $light-gray;
   }
 
   &__events__title-1 {
@@ -82,6 +122,19 @@
     font-size: 1.6rem;
     font-weight: 700;
     padding: 0.5rem 3rem;
+
+    @media only screen and(max-width:1024px) {
+      padding: 0.5rem 0.7rem !important;
+    }
+
+    @media only screen and(max-width:768px) {
+      padding: 0.5rem 2.5rem !important;
+    }
+
+    @media only screen and(max-width:1260px) {
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+    }
   }
 
   &__main {
