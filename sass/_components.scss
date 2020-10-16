@@ -169,7 +169,7 @@
 		color: $brown;
 	}
 
-	a:first-child {
+	a:not(:last-child) {
 		color: $blue;
 	}
 
