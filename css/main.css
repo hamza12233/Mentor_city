@@ -1229,7 +1229,7 @@ p, .access-connection__list li {
     align-self: center;
     transition: all 0.3s; }
     .chat__box a:hover {
-      background-color: #6f6f8c; }
+      background-color: #eff3fc; }
 .chat__searchbox {
   display: flex;
   max-width: 70.2rem;
@@ -1296,7 +1296,7 @@ p, .access-connection__list li {
   .chat__contact:not(:first-child) {
     margin-top: 1rem; }
   .chat__contact:hover {
-    background-color: #6f6f8c;
+    background-color: #eff3fc;
     border-right: 3px solid #d9692a; }
 .chat__avatar {
   width: 4rem;
@@ -1336,7 +1336,7 @@ p, .access-connection__list li {
       max-width: 100%;
       text-overflow: initial; } }
 .chat .active-contact {
-  background-color: #6f6f8c;
+  background-color: #eff3fc;
   border-right: 3px solid #d9692a; }
 
 .messagebox {
@@ -1419,7 +1419,7 @@ p, .access-connection__list li {
         height: 3rem;
         width: 3rem; }
   .messagebox__desc-right {
-    background-color: #6f6f8c;
+    background-color: #eff3fc;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
     border-radius: 0.8rem;
     padding: 1.3rem;
@@ -1923,7 +1923,7 @@ p, .access-connection__list li {
   .helpline_2__sidebar p, .helpline_2__sidebar .access-connection__list li, .access-connection__list .helpline_2__sidebar li {
     color: #262d3d; }
   .helpline_2__sidebar a {
-    background-color: #6f6f8c;
+    background-color: #eff3fc;
     padding: 1rem 1.5rem;
     cursor: pointer;
     margin-top: 1.5rem;
@@ -2235,7 +2235,7 @@ p, .access-connection__list li {
     font-weight: 600;
     color: #32325d; }
 .discuss-box__desc {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #556182;
   margin: 2rem 0 1rem 0; }
 .discuss-box__footer {
