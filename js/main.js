@@ -51,6 +51,7 @@ $(document).ready(function () {
     $(this).addClass("helpline-active");
   });
 });
+
 // Chat activate
 chatActivate.addEventListener("click", (e) => {
   e.preventDefault();
