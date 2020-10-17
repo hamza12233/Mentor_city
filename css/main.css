@@ -377,7 +377,7 @@ p, .access-connection__list li {
     padding-left: 0.5rem; }
   .pill-active {
     background-color: #dae3f8;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 50rem; }
 
 .fas--fa-circle-1 {
@@ -3018,6 +3018,7 @@ p, .access-connection__list li {
   padding-right: 1rem; }
 
 .resources-article__header {
+  margin-top: 0.5rem;
   display: flex;
   padding-left: 2rem; }
   .resources-article__header span {
@@ -3040,7 +3041,9 @@ p, .access-connection__list li {
 .resources-article__main {
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
-  border-radius: 0.8rem; }
+  border-radius: 0.8rem;
+  min-height: 96.5rem;
+  margin-bottom: 2rem; }
 .resources-article__img {
   position: relative; }
   .resources-article__img img {
@@ -3172,18 +3175,58 @@ p, .access-connection__list li {
     font-size: 1.3rem;
     text-align: center; }
   .categories__trending-tile-1 {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    display: inline-block;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: normal;
     text-transform: uppercase;
     color: #556182; }
   .categories__trending-tile-2 {
-    display: flex; }
+    display: flex;
+    margin-bottom: 1rem; }
+    .categories__trending-tile-2 a {
+      font-size: 1.3rem; }
     .categories__trending-tile-2 a:not(:first-child) {
       padding-left: 0.5rem; }
     .categories__trending-tile-2 span {
       color: #d9692a;
-      padding-left: 0.5rem; }
+      padding-left: 0.5rem;
+      display: flex;
+      align-items: center; }
+  .categories__trending-tile-3 {
+    font-size: 2rem;
+    color: #556182;
+    font-weight: 600; }
+  .categories__read-more {
+    color: #204ecf;
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    display: inline-block; }
+  .categories__about-author-box {
+    margin-top: 2rem; }
+  .categories__about-author {
+    font-size: 1.6rem;
+    color: #455065;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  .categories__author-profile {
+    padding-bottom: 1rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(235, 236, 237, 0.5); }
+  .categories__author-image img {
+    width: 100%; }
+  .categories__author-name {
+    margin-top: 1rem;
+    padding-left: 1rem; }
+    .categories__author-name h3 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: #556182; }
+    .categories__author-name p, .categories__author-name .access-connection__list li, .access-connection__list .categories__author-name li {
+      color: #8b94ae;
+      font-size: 1.2rem; }
 
 /*# sourceMappingURL=main.css.map */
