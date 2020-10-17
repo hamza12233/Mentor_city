@@ -144,18 +144,29 @@ p, .access-connection__list li {
 
 .select2-container--default .select2-selection--multiple {
   font-size: 1.4rem;
-  background: #f5f7fa;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 0.7rem;
   outline: 0;
   border: 0;
   color: #556182;
-  width: 23.5rem;
-  max-width: 23.5rem; }
+  width: 26rem;
+  max-width: 26rem;
+  border: 1px solid #d8d9dc; }
+  @media only screen and (max-width: 768px) {
+    .select2-container--default .select2-selection--multiple {
+      width: 100%;
+      max-width: 100%; } }
+  @media only screen and (min-width: 1500px) {
+    .select2-container--default .select2-selection--multiple {
+      width: 100%;
+      max-width: 100%; } }
+
+.select2-dropdown {
+  border: 1px solid #d8d9dc; }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   text-transform: uppercase;
-  background: #dae3f8;
+  background: #eff3fc;
   border-radius: 0.7rem;
   border: 0;
   padding: 0.5rem;
@@ -170,7 +181,7 @@ p, .access-connection__list li {
   border-right: 0; }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border: 0; }
+  border: 1px solid #d8d9dc; }
 
 .select2-container .select2-search--inline .select2-search__field {
   margin-top: 0; }
@@ -1142,6 +1153,9 @@ p, .access-connection__list li {
   padding-left: 0; }
 .setting__tabs-item:not(:last-child) {
   margin-right: 1.5rem; }
+  @media only screen and (max-width: 768px) {
+    .setting__tabs-item:not(:last-child) {
+      margin-bottom: 1rem; } }
 .setting__tabs-link {
   font-size: 1.4rem;
   color: #556182; }
@@ -1160,6 +1174,8 @@ p, .access-connection__list li {
     @media only screen and (max-width: 1199px) {
       .regular-tab__group .button {
         margin-top: 3rem; } }
+.regular-tab__button-box {
+  margin-top: 6rem; }
 .regular-tab__label {
   color: #313e61;
   font-size: 1.4rem;
@@ -1199,6 +1215,17 @@ p, .access-connection__list li {
     .regular-tab__select {
       width: 100%;
       max-width: 100%; } }
+.regular-tab__select--multiple {
+  width: 26rem;
+  max-width: 26rem; }
+  @media only screen and (max-width: 768px) {
+    .regular-tab__select--multiple {
+      width: 100%;
+      max-width: 100%; } }
+  @media only screen and (min-width: 1500px) {
+    .regular-tab__select--multiple {
+      width: 100%;
+      max-width: 100%; } }
 
 .communication .regular-tab__input {
   width: 30rem;
@@ -1230,13 +1257,18 @@ p, .access-connection__list li {
     display: flex; }
 
 .account-settings .regular-tab__input {
-  width: 37.77rem !important;
-  max-width: 37.77rem !important;
-  margin-bottom: 1.5rem; }
-@media only screen and (max-width: 768px) {
-  .account-settings .regular-tab__input {
-    width: 100%;
-    max-width: 100%; } }
+  width: 37.77rem;
+  max-width: 37.77rem; }
+  @media only screen and (max-width: 768px) {
+    .account-settings .regular-tab__input {
+      width: 100% !important;
+      max-width: 100% !important; } }
+  @media only screen and (min-width: 1500px) {
+    .account-settings .regular-tab__input {
+      width: 100% !important;
+      max-width: 100% !important; } }
+.account-settings__deactive-box {
+  margin-top: 3rem; }
 .account-settings__deactive {
   color: #262d3d;
   font-size: 1.4rem;
@@ -1256,12 +1288,20 @@ p, .access-connection__list li {
 .language .regular-tab__select {
   max-width: 37rem !important;
   width: 37rem !important; }
+  @media only screen and (max-width: 768px) {
+    .language .regular-tab__select {
+      width: 100% !important;
+      max-width: 100% !important; } }
+  @media only screen and (min-width: 1500px) {
+    .language .regular-tab__select {
+      width: 100% !important;
+      max-width: 100% !important; } }
 
 .edit-profile-btn {
   margin: 0;
   position: absolute;
-  right: 35px;
-  bottom: 20px; }
+  right: 3.5rem;
+  bottom: 2rem; }
 
 .chat__title {
   font-size: 2rem;
