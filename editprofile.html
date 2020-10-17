@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/font-awesome/css/all.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="css/Select2-css/select2.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Mentor City</title>
@@ -674,43 +676,25 @@
                                 class="col-md-12 col-lg-12 col-xl-6 specialized"
                               >
                                 <div class="regular-tab__group">
-                                  <select class="regular-tab__select">
+                                  <select class="regular-tab__select select-js" multiple="multiple">
                                     <option value="Industry">Industry</option>
                                     <option value="option-1">option 1</option>
                                     <option value="option-2">option 2</option>
+                                    <option value="option-2">option 3</option>
                                   </select>
-                                  <a href="#" class="pill pill-input"
-                                    >IT & Admin
-                                    <sapn class="pill-cross-icon"
-                                      ><img
-                                        src="./img/icons/close-icon.svg"
-                                        alt="cross-icon" /></sapn
-                                  ></a>
                                 </div>
                                 <div class="regular-tab__group">
-                                  <select class="regular-tab__select">
+                                  <select class="regular-tab__select select-js" multiple="multiple">
                                     <option value="Language">Language</option>
                                     <option value="option-3">option 3</option>
                                     <option value="option-4">option 4</option>
                                     </option>
                                   </select>
-                                  <a href="#" class="pill pill-input"
-                                    >German
-                                    <sapn class="pill-cross-icon"
-                                      ><img
-                                        src="./img/icons/close-icon.svg"
-                                        alt="cross-icon" /></sapn
-                                  ></a>
+                                 
                                 </div>
                               </div>
                               <div class="col-md-12 col-lg-12 col-xl-6"></div>
-                              <!-- <div class="col-md-12">
-                                <div class="regular-tab__group">
-                                  <button class="button button--blue">
-                                    Save
-                                  </button>
-                                </div>
-                              </div> -->
+                              
                               <button
                                 class="button button--blue edit-profile-btn"
                               >
@@ -958,6 +942,13 @@
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      $(document).ready(function () {
+				$(".select-js").select2();
+			});
+    </script>
   </body>
 </html>
