@@ -197,6 +197,12 @@
   }
 }
 
+.upcoming .box-tabs li {
+  max-width: 13rem;
+  width: 100%;
+  text-align: center;
+}
+
 .event-upcoming {
   margin-top: 3rem;
   &__cards {
@@ -243,7 +249,7 @@
   }
 
   &__card-desc {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   &__title {
@@ -256,12 +262,13 @@
     font-weight: normal;
     font-size: 1.6rem;
     color: $light-gray;
+    margin-top: 1rem;
   }
 
   &__readmore {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     p {
       font-weight: bold;

@@ -2665,6 +2665,11 @@ p, .access-connection__list li {
   font-weight: normal;
   margin-top: 2rem; }
 
+.upcoming .box-tabs li {
+  max-width: 13rem;
+  width: 100%;
+  text-align: center; }
+
 .event-upcoming {
   margin-top: 3rem; }
   .event-upcoming__card {
@@ -2698,7 +2703,7 @@ p, .access-connection__list li {
     font-size: 1.8rem;
     color: #ffffff; }
   .event-upcoming__card-desc {
-    padding: 1rem; }
+    padding: 1.5rem; }
   .event-upcoming__title {
     font-weight: 700;
     font-size: 2rem;
@@ -2706,11 +2711,12 @@ p, .access-connection__list li {
   .event-upcoming__content {
     font-weight: normal;
     font-size: 1.6rem;
-    color: #556182; }
+    color: #556182;
+    margin-top: 1rem; }
   .event-upcoming__readmore {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem; }
+    margin-top: 3rem; }
     .event-upcoming__readmore p, .event-upcoming__readmore .access-connection__list li, .access-connection__list .event-upcoming__readmore li {
       font-weight: bold;
       font-size: 1.4rem;
