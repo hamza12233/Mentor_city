@@ -2665,6 +2665,68 @@ p, .access-connection__list li {
   font-weight: normal;
   margin-top: 2rem; }
 
+.event-upcoming {
+  margin-top: 3rem; }
+  .event-upcoming__card {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
+    display: flex;
+    margin-bottom: 3rem; }
+  .event-upcoming__date-box {
+    max-width: 18rem;
+    width: 100%;
+    background: #e28086;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .event-upcoming__date-box ul {
+      display: flex;
+      flex-direction: column; }
+  .event-upcoming__day {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #ffffff; }
+  .event-upcoming__date {
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: center; }
+  .event-upcoming__month {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #ffffff; }
+  .event-upcoming__card-desc {
+    padding: 1rem; }
+  .event-upcoming__title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #556182; }
+  .event-upcoming__content {
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #556182; }
+  .event-upcoming__readmore {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
+    .event-upcoming__readmore p, .event-upcoming__readmore .access-connection__list li, .access-connection__list .event-upcoming__readmore li {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #556182; }
+    .event-upcoming__readmore a {
+      font-weight: normal;
+      font-size: 1.6rem;
+      color: #204ecf; }
+  .event-upcoming__card-bg-1 {
+    background-color: #2d9cdb; }
+  .event-upcoming__card-bg-2 {
+    background-color: #556182; }
+
+.event-booked__bg {
+  background: #b8c1d9; }
+
 .members .forward-list {
   margin-bottom: 3rem; }
 
