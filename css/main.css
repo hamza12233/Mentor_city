@@ -2689,17 +2689,17 @@ p, .access-connection__list li {
       display: flex;
       flex-direction: column; }
   .event-upcoming__day {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.8rem;
     color: #ffffff; }
   .event-upcoming__date {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 4.8rem;
     color: #ffffff;
     display: flex;
     justify-content: center; }
   .event-upcoming__month {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.8rem;
     color: #ffffff; }
   .event-upcoming__card-desc {
