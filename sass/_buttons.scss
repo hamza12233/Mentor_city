@@ -97,6 +97,10 @@
     }
   }
 
+  &--blue-simple {
+    padding: 0.4rem 5rem;
+  }
+
   &--blue-disabled {
     @extend .button--blue;
     opacity: 0.5;
