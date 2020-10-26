@@ -181,6 +181,11 @@
     color: #22215b;
   }
 
+  &-light-purple {
+    background: #f7effe;
+    color: #22215b;
+  }
+
   &-yellow {
     background: $color-yellow;
     margin-left: auto;
@@ -202,6 +207,7 @@
       color: $light-gray;
     }
   }
+
   &-cross-icon {
     padding-left: 0.5rem;
   }
