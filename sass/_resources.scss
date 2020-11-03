@@ -15,13 +15,19 @@
   &__blogs {
   }
 
-  &__blog {
-    @include card-style;
-    margin-bottom: 2rem;
+  &__blog-image {
+    width: 100%;
+    height: 21rem;
 
     img {
       width: 100%;
+      height: 100%;
     }
+  }
+
+  &__blog {
+    @include card-style;
+    margin-bottom: 2rem;
   }
 
   &__desc {
@@ -136,9 +142,13 @@
 
   &__img {
     position: relative;
+    width: 100%;
+    max-height: 30rem;
+    height: 100%;
 
     img {
       width: 100%;
+      height: 100%;
     }
 
     span {
@@ -177,15 +187,20 @@
     color: $light-gray;
   }
 
+  &__card-img {
+    width: 6.5rem;
+    max-height: 6.5rem;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   &__card {
     display: flex;
     border-bottom: 1px solid $bg-blue;
     padding-bottom: 2rem;
-
-    img {
-      width: 6.5rem;
-      height: 6.5rem;
-    }
   }
 
   &__card-wrap {
@@ -390,8 +405,11 @@
   }
 
   &__author-image {
+    width: 100%;
+    height: 23.6rem;
     img {
       width: 100%;
+      height: 100%;
     }
   }
 
