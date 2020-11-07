@@ -3077,7 +3077,7 @@ p, .access-connection__list li {
       margin-left: 1rem; }
   .match-card__content {
     padding: 1.5rem 2rem; }
-    .match-card__content .col-md-6:first-child {
+    .match-card__content .col-lg-6:first-child {
       border-right: 1px solid #eff3fc; }
   .match-card__profile {
     display: flex;
@@ -3141,6 +3141,167 @@ p, .access-connection__list li {
       margin-right: 2rem; }
       .match-card__outline-buttons .button:last-child {
         margin-top: 1rem; }
+
+.admin-profile__card {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  min-height: 19rem; }
+.admin-profile__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+.admin-profile__avatar {
+  height: 15rem; }
+  .admin-profile__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+.admin-profile__title {
+  font-weight: bold;
+  color: #556182;
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 576px) {
+    .admin-profile__title {
+      margin-top: 1rem; } }
+.admin-profile__post {
+  display: flex;
+  align-items: center;
+  color: #556182;
+  margin-bottom: 1rem; }
+  .admin-profile__post img {
+    width: 2rem; }
+  .admin-profile__post h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.4rem; }
+  .admin-profile__post span {
+    font-weight: normal; }
+.admin-profile__location {
+  display: flex;
+  align-items: center; }
+  .admin-profile__location img {
+    width: 2rem; }
+  .admin-profile__location span {
+    font-size: 1.4rem;
+    color: #556182; }
+.admin-profile__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 576px) {
+    .admin-profile__buttons {
+      flex-direction: column; }
+      .admin-profile__buttons > a {
+        margin-top: 1rem; } }
+.admin-profile .more-box {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  text-align: right; }
+  .admin-profile .more-box:hover .more-box__dropdown {
+    visibility: visible;
+    opacity: 1; }
+  .admin-profile .more-box__dropdown {
+    width: 10rem;
+    border: 1px solid #b8c1d9;
+    background-color: #fff;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0; }
+  .admin-profile .more-box__option {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #556182; }
+    .admin-profile .more-box__option:hover {
+      cursor: pointer;
+      background: #eff3fc; }
+.admin-profile__points {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  min-height: 19rem; }
+.admin-profile__points-big {
+  text-align: center; }
+  .admin-profile__points-big figure {
+    width: 7.6rem;
+    height: 7.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem auto; }
+  .admin-profile__points-big h1 {
+    font-weight: bold;
+    color: #556182; }
+  .admin-profile__points-big p, .admin-profile__points-big .access-connection__list li, .access-connection__list .admin-profile__points-big li {
+    font-size: 1.2rem;
+    color: #556182; }
+  .admin-profile__points-big img {
+    width: 100%; }
+.admin-profile__points-small {
+  display: flex;
+  justify-content: space-between; }
+  .admin-profile__points-small:first-child {
+    margin-bottom: 2rem; }
+  .admin-profile__points-small figure {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden; }
+  .admin-profile__points-small img {
+    width: 100%; }
+
+.admin-about {
+  width: 75%;
+  margin: 2.5rem auto 0; }
+  @media only screen and (max-width: 768px) {
+    .admin-about {
+      width: 100%; } }
+  .admin-about__summary {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem; }
+    .admin-about__summary h3 {
+      color: #556182;
+      font-weight: bold; }
+    .admin-about__summary p, .admin-about__summary .access-connection__list li, .access-connection__list .admin-about__summary li {
+      color: rgba(31, 31, 50, 0.7);
+      margin-bottom: 1rem; }
+    .admin-about__summary a {
+      font-size: 1.4rem; }
+  .admin-about__skills {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 576px) {
+      .admin-about__skills .pill {
+        display: inline-block;
+        margin-bottom: 1rem; } }
+    .admin-about__skills h3 {
+      color: #556182;
+      font-weight: bold; }
+  .admin-about__development {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 576px) {
+      .admin-about__development .pill {
+        display: inline-block;
+        margin-bottom: 1rem; } }
+    .admin-about__development h3 {
+      color: #556182;
+      font-weight: bold; }
 
 .resources__title {
   margin: 3rem 0; }
