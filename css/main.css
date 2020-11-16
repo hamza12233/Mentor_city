@@ -3308,6 +3308,79 @@ p, .access-connection__list li {
       color: #556182;
       font-weight: bold; }
 
+.admin-achievement {
+  width: 75%;
+  margin: 2.5rem auto 0; }
+  @media only screen and (max-width: 768px) {
+    .admin-achievement {
+      width: 100%; } }
+  .admin-achievement__summary {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem; }
+    .admin-achievement__summary h3 {
+      color: #556182;
+      font-weight: bold; }
+    .admin-achievement__summary p, .admin-achievement__summary .access-connection__list li, .access-connection__list .admin-achievement__summary li {
+      color: rgba(31, 31, 50, 0.7);
+      margin-bottom: 1rem; }
+  .admin-achievement__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .admin-achievement__icon figure {
+      margin-bottom: 2rem;
+      width: 4.5rem; }
+      .admin-achievement__icon figure img {
+        width: 100%; }
+    .admin-achievement__icon h6 {
+      color: #212529;
+      font-size: 1.2rem; }
+  .admin-achievement__content {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 3rem 0; }
+
+.admin-followers {
+  width: 90%;
+  margin: 2.5rem auto 0; }
+  @media only screen and (max-width: 768px) {
+    .admin-followers {
+      width: 100%; } }
+  .admin-followers__single-card {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem; }
+    .admin-followers__single-card figure {
+      margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 576px) {
+        .admin-followers__single-card figure {
+          padding: 5rem; } }
+      .admin-followers__single-card figure img {
+        width: 100%; }
+    .admin-followers__single-card h3 {
+      color: #556182;
+      font-weight: bold; }
+    .admin-followers__single-card h5,
+    .admin-followers__single-card p,
+    .admin-followers__single-card .access-connection__list li,
+    .access-connection__list .admin-followers__single-card li {
+      color: #556182; }
+  .admin-followers__post {
+    display: flex;
+    align-items: center;
+    color: #556182;
+    margin-bottom: 1rem; }
+    .admin-followers__post h4 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.4rem; }
+      .admin-followers__post h4 span {
+        font-weight: normal; }
+
 .resources__title {
   margin: 3rem 0; }
   .resources__title h2 {

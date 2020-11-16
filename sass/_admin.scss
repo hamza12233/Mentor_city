@@ -773,3 +773,112 @@
 		}
 	}
 }
+
+.admin-achievement {
+	width: 75%;
+	margin: 2.5rem auto 0;
+
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+	&__summary {
+		@include card-style;
+		padding: 2rem;
+		margin-bottom: 2.5rem;
+
+		h3 {
+			color: $light-gray;
+			font-weight: bold;
+		}
+
+		p {
+			color: rgba(31, 31, 50, 0.7);
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		figure {
+			margin-bottom: 2rem;
+			width: 4.5rem;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		h6 {
+			color: #212529;
+			font-size: 1.2rem;
+		}
+	}
+
+	&__content {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 3rem 0;
+	}
+}
+
+.admin-followers {
+	width: 90%;
+	margin: 2.5rem auto 0;
+
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
+
+	&__single-card {
+		@include card-style;
+		padding: 2rem;
+		margin-bottom: 2.5rem;
+
+		figure {
+			margin-bottom: 1.5rem;
+
+			@media only screen and (max-width: 576px) {
+				padding: 5rem;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		h3 {
+			color: $light-gray;
+			font-weight: bold;
+		}
+
+		h5,
+		p {
+			color: $light-gray;
+		}
+
+		// p {
+		// 	color: rgba(31, 31, 50, 0.7);
+		// 	margin-bottom: 1rem;
+		// }
+	}
+
+	&__post {
+		display: flex;
+		align-items: center;
+		color: #556182;
+		margin-bottom: 1rem;
+
+		h4 {
+			margin: 0;
+			font-weight: bold;
+			font-size: 1.4rem;
+
+			span {
+				font-weight: normal;
+			}
+		}
+	}
+}
