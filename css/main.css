@@ -3156,7 +3156,9 @@ p, .access-connection__list li {
   justify-content: space-between;
   height: 100%; }
 .admin-profile__avatar {
-  height: 15rem; }
+  height: 15rem;
+  border-radius: 0.8rem;
+  overflow: hidden; }
   .admin-profile__avatar img {
     width: 100%;
     height: 100%;
@@ -3241,6 +3243,9 @@ p, .access-connection__list li {
   .admin-profile__points-big p, .admin-profile__points-big .access-connection__list li, .access-connection__list .admin-profile__points-big li {
     font-size: 1.2rem;
     color: #556182; }
+    @media only screen and (max-width: 576px) {
+      .admin-profile__points-big p, .admin-profile__points-big .access-connection__list li, .access-connection__list .admin-profile__points-big li {
+        margin-bottom: 2rem; } }
   .admin-profile__points-big img {
     width: 100%; }
 .admin-profile__points-small {

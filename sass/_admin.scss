@@ -548,6 +548,8 @@
 
 	&__avatar {
 		height: 15rem;
+		border-radius: 0.8rem;
+		overflow: hidden;
 
 		img {
 			width: 100%;
@@ -676,6 +678,10 @@
 		p {
 			font-size: 1.2rem;
 			color: $light-gray;
+
+			@media only screen and (max-width: 576px) {
+				margin-bottom: 2rem;
+			}
 		}
 
 		img {
